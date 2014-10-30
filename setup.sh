@@ -15,3 +15,6 @@ ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
 
 # bin
 ln -s /home/chenyang/env/bin/ /home/chenyang/bin
+
+# git config
+ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
