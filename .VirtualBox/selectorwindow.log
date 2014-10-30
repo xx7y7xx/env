@@ -1,0 +1,16 @@
+VirtualBox GUI VM Selector Window 4.3.14 r95030 linux.amd64 (Jul 24 2014 09:15:33) release log
+00:00:01.435899 Log opened 2014-10-13T04:01:29.686315000Z
+00:00:01.435901 Build Type: release
+00:00:01.435903 OS Product: Linux
+00:00:01.435904 OS Release: 3.10.0-123.el7.x86_64
+00:00:01.435905 OS Version: #1 SMP Mon Jun 30 12:09:22 UTC 2014
+00:00:01.435939 DMI Product Name: System Product Name
+00:00:01.435947 DMI Product Version: System Version
+00:00:01.436021 Host RAM: 11824MB total, 7574MB available
+00:00:01.436024 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:01.436025 Process ID: 17979
+00:00:01.436026 Package type: LINUX_64BITS_EL_7
+00:00:01.445765 UIMediumEnumerator: Medium-enumeration started...
+00:00:01.766429 UIMediumEnumerator: Medium-enumeration finished!
+00:00:01.861775 Failed to open "/dev/vboxdrv", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
+00:00:10.607299 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={12f4dcdb-12b2-4ec1-b7cd-ddd9f6c5bf4d} aComponent={Session} aText={The session is not locked (session state: Unlocked)}, preserve=false
