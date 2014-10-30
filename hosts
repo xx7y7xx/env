@@ -1,0 +1,61 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4a     #hide
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6      #hide
+192.168.2.220         chenyang-desktop.spolo.org chenyang-desktop      #hide
+
+# dev
+#172.16.24.128	devvm.spolo.org	#hide
+#172.16.24.129	dvm.spolo.org	#hide
+#172.16.24.130	dvm.spolo.org	#hide
+#192.168.2.28    dvm.spolo.org	#hide
+192.168.2.220   dvm.spolo.org	#hide
+
+# server
+192.168.1.153   glue.spolo.org	#hide
+
+#==== www.xuanran001.com
+192.168.0.61	www.xuanran001.com
+#192.168.2.178	www.xuanran001.com
+#192.168.2.179	www.xuanran001.com
+#192.168.2.180	www.xuanran001.com
+#192.168.2.181	www.xuanran001.com
+#====
+
+#==== www.hellojia.com
+192.168.0.61	www.hellojia.com
+#192.168.2.178	www.hellojia.com
+#192.168.2.179	www.hellojia.com
+#192.168.2.180	www.hellojia.com
+#192.168.2.181	www.hellojia.com
+#====
+
+#==== conf.xuanran001.com
+192.168.0.61	conf.xuanran001.com
+#192.168.2.178	conf.xuanran001.com
+#192.168.2.179	conf.xuanran001.com
+#192.168.2.180	conf.xuanran001.com
+#192.168.2.181	conf.xuanran001.com
+#====
+
+192.168.0.60	www.jiandan001.com
+
+
+192.168.0.101   www.spolo.org		#hide
+192.168.0.101   spolo.org			#hide
+192.168.0.101   gme.spolo.org		#hide
+192.168.0.101   render.spolo.org	#hide
+192.168.0.101   bitlanyuan.com		#hide
+192.168.0.101   www.bitlanyuan.com	#hide
+192.168.0.101   3d.3dly.net			#hide
+#192.168.0.101   3d.beijing101.com	#hide
+192.168.0.101   www.yonghegong.com	#hide
+192.168.0.101   yonghegong.com		#hide
+
+192.168.0.102	3dly.net			#hide
+192.168.0.102	www.3dly.net		#hide
+192.168.0.102	wangzhan.jiandan001.com	#hide
+#192.168.0.102	anli.jiandan001.com	#hide
+192.168.0.102	3d-ces.com			#hide
+192.168.0.102	3d-dgj.com			#hide
+
+
+
