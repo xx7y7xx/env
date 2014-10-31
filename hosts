@@ -1,6 +1,12 @@
-127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4a     #hide
-::1         localhost localhost.localdomain localhost6 localhost6.localdomain6      #hide
-192.168.2.220         chenyang-desktop.spolo.org chenyang-desktop      #hide
+127.0.0.1   localhost   #hide
+127.0.1.1   sp-chenyang #hide
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback  #hide
+fe00::0 ip6-localnet    #hide
+ff00::0 ip6-mcastprefix #hide
+ff02::1 ip6-allnodes    #hide
+ff02::2 ip6-allrouters  #hide
 
 # dev
 #172.16.24.128	devvm.spolo.org	#hide

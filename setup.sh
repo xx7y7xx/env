@@ -16,6 +16,10 @@ ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
 # bin
 ln -s /home/chenyang/env/bin/ /home/chenyang/bin
 
+# hosts
+sudo ln -s /home/chenyang/env/hosts /etc/hosts
+sudo chown chenyang.chenyang /etc/hosts
+
 # git config
 ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
 
