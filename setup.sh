@@ -29,3 +29,6 @@ sshfs -o reconnect,allow_other,default_permissions -o uid=1000 -o gid=1000 -o Id
 # hudson slave needs java runtime env
 # apache sling need java runtime env (java7 may not work)
 sudo apt-get install openjdk-6-jdk
+
+# mount point
+sudo cat fstab  >> /etc/fstab

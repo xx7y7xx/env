@@ -1,3 +1,8 @@
+
+#
+# added by chenyang
+#
+
 #192.168.1.200:/data/superpolo_dep/ubuntu-10.04-64bit/    /home/chenyang/depends_1_200    nfs    rw,auto
 #192.168.2.100:/data/superpolo_dep/ubuntu-10.04-64bit/    /home/chenyang/depends_2_100    nfs    rw,auto
 #192.168.2.100:/data/superpolo_build/Linux_x86_64/    /home/chenyang/source/superpolo/trunks/libs/prebuild    nfs    rw,auto
