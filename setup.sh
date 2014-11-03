@@ -32,3 +32,6 @@ sudo apt-get install openjdk-6-jdk
 
 # mount point
 sudo cat fstab  >> /etc/fstab
+
+# hudson slave dir
+mkdir -p /home/chenyang/tmp/hudsonslave
