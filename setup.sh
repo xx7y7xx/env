@@ -35,3 +35,6 @@ sudo cat fstab  >> /etc/fstab
 
 # hudson slave dir
 mkdir -p /home/chenyang/tmp/hudsonslave
+
+# glue performance statistics
+https://github.com/sp-chenyang/performance#setup
