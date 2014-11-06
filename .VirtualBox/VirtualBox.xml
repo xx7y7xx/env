@@ -10,9 +10,9 @@
     <ExtraData>
       <ExtraDataItem name="GUI/DetailsPageBoxes" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
       <ExtraDataItem name="GUI/GroupDefinitions/" value="m=46a456af-8f2c-4f14-995b-dbd3eca21587,m=2d957a45-982e-467e-aca4-b2cdc580fc6b,m=353ae35a-a828-4e43-bef7-0e3b10b45a4f,m=8699cbae-6953-4e47-9851-399a6eacfa0c,m=d4107be1-53a4-496d-806f-d0678216ee65,m=b3d708fd-56ea-4c57-9107-21c83c2f82d4,m=3ac982c9-1897-405a-9c9f-0bb942408bad,m=2e5df38b-04e2-485f-a6ae-4a2631695a3b,m=9611fdd3-0651-4df1-bcf9-fc76caf11fbf"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=xp"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=jiandan001_140116_centos_x64"/>
       <ExtraDataItem name="GUI/LastVMSelected" value="2774159b-4aef-4806-806b-d23f079db35f"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="446,245,770,522"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="446,273,770,522"/>
       <ExtraDataItem name="GUI/LastWindowPostion" value="197,230,770,550"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/chenyang/software"/>
       <ExtraDataItem name="GUI/RecentFolderHD" value="/home/chenyang/opt/vbox/HardDisks/jiandan001_140212_centos_x64"/>

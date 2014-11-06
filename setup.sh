@@ -13,6 +13,9 @@
 # vim 
 ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
 
+# VirtualBox
+ln -s /home/chenyang/env/.VirtualBox /home/chenyang/.VirtualBox
+
 # bin
 ln -s /home/chenyang/env/bin/ /home/chenyang/bin
 
