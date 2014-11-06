@@ -15,3 +15,6 @@
 
 # move /tmp to RAM
 #tmpfs /tmp tmpfs defaults,noexec,nosuid 0 0
+
+# 2.21 sshfs
+chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
