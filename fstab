@@ -1,20 +1,22 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mapper/ubuntu--vg-root /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/sda1 during installation
+UUID=f9c76da9-0416-4fad-bedd-8cd1cfd1535b /boot           ext2    defaults        0       2
+/dev/mapper/ubuntu--vg-swap_1 none            swap    sw              0       0
 
 #
 # added by chenyang
 #
 
-#192.168.1.200:/data/superpolo_dep/ubuntu-10.04-64bit/    /home/chenyang/depends_1_200    nfs    rw,auto
-#192.168.2.100:/data/superpolo_dep/ubuntu-10.04-64bit/    /home/chenyang/depends_2_100    nfs    rw,auto
-#192.168.2.100:/data/superpolo_build/Linux_x86_64/    /home/chenyang/source/superpolo/trunks/libs/prebuild    nfs    rw,auto
-
-#192.168.3.20:/root/Public    /home/chenyang/tmp/share    nfs    rw,auto
-#192.168.3.20:/data/tmp    /home/chenyang/tmp/share    nfs    rw,auto
-#192.168.2.21:/public/nfs/depends/ubuntu_1004_64 /home/chenyang/source/depends    nfs     ro,auto       0 0
-#192.168.2.21:/public/nfs/share    /home/chenyang/share    nfs    rw,auto       0 0
-//192.168.2.21/share /home/chenyang/mnt/share cifs rw,username=a@a.com,password=123,auto        0 0
-
-# move /tmp to RAM
-#tmpfs /tmp tmpfs defaults,noexec,nosuid 0 0
-
-# 2.21 sshfs
+//192.168.2.21/share /home/chenyang/mnt/share cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang        0 0
 chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+
+# home sub dir
+chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Pictures /home/chenyang/Pictures  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Downloads /home/chenyang/Downloads fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
