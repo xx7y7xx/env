@@ -1,6 +1,14 @@
 set smartindent
-set tabstop=4
-set shiftwidth=4
+
+" Set autoindent according to file type.
+if (&ft == 'php' || &ft == 'html')
+    set tabstop=2
+    set shiftwidth=2
+else
+    set tabstop=2
+    set shiftwidth=2
+endif
+
 set expandtab
 
 set hls
@@ -10,3 +18,4 @@ set hls
 "
 au BufRead,BufNewFile *.esp setfiletype javascript
 au BufRead,BufNewFile *.module setfiletype php
+au BufRead,BufNewFile *.html setfiletype php
