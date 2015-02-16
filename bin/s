@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh -X -i ~/.ssh/3dly.net.key  -o StrictHostKeyChecking=no 192.168.$1
+ssh -i ~/.ssh/3dly.net.key  -o StrictHostKeyChecking=no 192.168.$1
