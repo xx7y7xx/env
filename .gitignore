@@ -1,2 +1,3 @@
 .VirtualBox/*.log*
 .VirtualBox/VBoxSVC.log
+.*.swp
