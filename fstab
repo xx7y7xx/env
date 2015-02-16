@@ -14,9 +14,13 @@ UUID=f9c76da9-0416-4fad-bedd-8cd1cfd1535b /boot           ext2    defaults      
 # added by chenyang
 #
 
-//192.168.2.21/share /home/chenyang/mnt/share cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang        0 0
-chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+//192.168.2.21/share /home/chenyang/mnt/share cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
+
+# installer try to change file owner, but failed. So change my mind, using rcyn instead
+#chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
 
 # home sub dir
-chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Pictures /home/chenyang/Pictures  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Downloads /home/chenyang/Downloads fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+#chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Pictures /home/chenyang/Pictures  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+#chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Downloads /home/chenyang/Downloads fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+//192.168.2.21/share/Personal/chenyang/Downloads /home/chenyang/Downloads cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
+//192.168.2.21/share/Personal/chenyang/Pictures /home/chenyang/Pictures cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
