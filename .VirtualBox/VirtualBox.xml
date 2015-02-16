@@ -9,10 +9,13 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/DetailsPageBoxes" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/GroupDefinitions/" value="m=46a456af-8f2c-4f14-995b-dbd3eca21587,m=2d957a45-982e-467e-aca4-b2cdc580fc6b,m=353ae35a-a828-4e43-bef7-0e3b10b45a4f,m=8699cbae-6953-4e47-9851-399a6eacfa0c,m=d4107be1-53a4-496d-806f-d0678216ee65,m=b3d708fd-56ea-4c57-9107-21c83c2f82d4,m=3ac982c9-1897-405a-9c9f-0bb942408bad,m=2e5df38b-04e2-485f-a6ae-4a2631695a3b,m=9611fdd3-0651-4df1-bcf9-fc76caf11fbf"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=xp"/>
+      <ExtraDataItem name="GUI/GroupDefinitions/" value="m=46a456af-8f2c-4f14-995b-dbd3eca21587,m=2d957a45-982e-467e-aca4-b2cdc580fc6b,m=353ae35a-a828-4e43-bef7-0e3b10b45a4f,m=8699cbae-6953-4e47-9851-399a6eacfa0c,m=d4107be1-53a4-496d-806f-d0678216ee65,m=b3d708fd-56ea-4c57-9107-21c83c2f82d4,m=3ac982c9-1897-405a-9c9f-0bb942408bad,m=9611fdd3-0651-4df1-bcf9-fc76caf11fbf,m=8847ec8e-cfa1-464f-ac93-fa7138cf56e5,m=5d6163f4-3f22-49ed-8f0b-faf884b9ab65"/>
+      <ExtraDataItem name="GUI/HostScreenSaverDisabled" value="false"/>
+      <ExtraDataItem name="GUI/Input/AutoCapture" value="true"/>
+      <ExtraDataItem name="GUI/Input/HostKeyCombination" value="65508"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=test"/>
       <ExtraDataItem name="GUI/LastVMSelected" value="2774159b-4aef-4806-806b-d23f079db35f"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="446,301,770,522"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="137,297,770,522"/>
       <ExtraDataItem name="GUI/LastWindowPostion" value="197,230,770,550"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/chenyang/software"/>
       <ExtraDataItem name="GUI/RecentFolderHD" value="/opt/vbox/HardDisks/jiandan001_140212_centos_x64"/>
@@ -35,8 +38,9 @@
       <MachineEntry uuid="{d4107be1-53a4-496d-806f-d0678216ee65}" src="/opt/vbox/Machines/androVM_vbox86tp_4.1.1_r6.1-20130222-gapps-houdini-flash/androVM_vbox86tp_4.1.1_r6.1-20130222-gapps-houdini-flash.vbox"/>
       <MachineEntry uuid="{b3d708fd-56ea-4c57-9107-21c83c2f82d4}" src="/opt/vbox/Machines/androidx86/androidx86.vbox"/>
       <MachineEntry uuid="{3ac982c9-1897-405a-9c9f-0bb942408bad}" src="/opt/vbox/Machines/xp/xp.vbox"/>
-      <MachineEntry uuid="{2e5df38b-04e2-485f-a6ae-4a2631695a3b}" src="/opt/vbox/Machines/test/test.vbox"/>
       <MachineEntry uuid="{9611fdd3-0651-4df1-bcf9-fc76caf11fbf}" src="/opt/vbox/Machines/jiandan001_140212_centos_x64/jiandan001_140212_centos_x64.vbox"/>
+      <MachineEntry uuid="{8847ec8e-cfa1-464f-ac93-fa7138cf56e5}" src="/opt/vbox/Machines/test/test.vbox"/>
+      <MachineEntry uuid="{5d6163f4-3f22-49ed-8f0b-faf884b9ab65}" src="/home/chenyang/opt/vbox/Machines/test/test.vbox"/>
     </MachineRegistry>
     <MediaRegistry>
       <HardDisks/>
@@ -48,7 +52,7 @@
         <DHCPServer networkName="HostInterfaceNetworking-vboxnet0" IPAddress="192.168.56.100" networkMask="255.255.255.0" lowerIP="192.168.56.101" upperIP="192.168.56.254" enabled="1"/>
       </DHCPServers>
     </NetserviceRegistry>
-    <SystemProperties defaultMachineFolder="/opt/vbox/Machines" defaultHardDiskFormat="VDI" VRDEAuthLibrary="VRDPAuth" webServiceAuthLibrary="VRDPAuth" LogHistoryCount="3" exclusiveHwVirt="true"/>
+    <SystemProperties defaultMachineFolder="/home/chenyang/opt/vbox/Machines" defaultHardDiskFormat="VDI" VRDEAuthLibrary="VRDPAuth" webServiceAuthLibrary="VRDPAuth" LogHistoryCount="3" exclusiveHwVirt="true"/>
     <USBDeviceFilters/>
   </Global>
 </VirtualBox>
