@@ -23,6 +23,7 @@ function check2()
 # check not commit
 
 check1 "/home/chenyang/env"
+check1 "/home/chenyang/workspace"
 check2 "performance"
 check2 "xxd3vin.github.io"
 
