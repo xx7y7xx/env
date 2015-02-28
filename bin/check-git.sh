@@ -8,7 +8,7 @@ function noty()
 function check()
 {
   files="`git ls-files --other --directory --exclude-standard`"
-  git ls-files --other --directory --exclude-standard | sed q1 || noty "noty" "uncommit changes in git /home/chenyang/env\nfile list:\n$files"
+  git ls-files --other --directory --exclude-standard | sed q1 || noty "Uncommit changes in Git" "Dir:\n`pwd`\n \nFile list:\n$files\n"
 }
 
 function check1()
