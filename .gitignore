@@ -1,3 +1,4 @@
 .VirtualBox/*.log*
 .VirtualBox/VBoxSVC.log
 .*.swp
+bin/*.osl
