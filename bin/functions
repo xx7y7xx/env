@@ -1,0 +1,8 @@
+#!/bin/bash
+
+function noty()
+{
+  export DISPLAY=:0.0 && export XAUTHORITY=/home/chenyang/.Xauthority && /usr/bin/notify-send "$1" "$2" -i ~/Downloads/swiper-autoplay.png
+}
+
+
