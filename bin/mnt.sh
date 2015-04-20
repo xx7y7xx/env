@@ -130,8 +130,8 @@ mnt_single()
 
     root
 
-    davmount "$ip"
-    ftpmount "$ip"
+    #davmount "$ip"
+    #ftpmount "$ip"
     sftpmount "$ip"
 }
 
@@ -150,8 +150,8 @@ umnt_single()
 
     root
 
-    davmount "$ip" "u"
-    ftpmount "$ip" "u"
+    #davmount "$ip" "u"
+    #ftpmount "$ip" "u"
     sftpmount "$ip" "u"
 }
 
