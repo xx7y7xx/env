@@ -9,4 +9,4 @@ LOG179="/home/chenyang/Mount/0.179sftp/var/log/npm.log"
 LOG180="/home/chenyang/Mount/0.180sftp/var/log/npm.log"
 LOG181="/home/chenyang/Mount/0.181sftp/var/log/npm.log"
 
-cat $LOG176 $LOG177 $LOG178 $LOG179 $LOG180 |less
+cat $LOG174 $LOG175 $LOG176 $LOG177 $LOG178 $LOG179 $LOG180 |less

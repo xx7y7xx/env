@@ -16,5 +16,4 @@ multitail -s 2 \
   -ci red    $LOG177 \
   -ci red    $LOG178 \
   -ci red    $LOG179 \
-  -ci red    $LOG180 \
-  -ci red    $LOG181
+  -ci red    $LOG180
