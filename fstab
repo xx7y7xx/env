@@ -1,20 +1,10 @@
-# /etc/fstab: static file system information.
-#
-# Use 'blkid' to print the universally unique identifier for a
-# device; this may be used with UUID= as a more robust way to name devices
-# that works even if disks are added and removed. See fstab(5).
-#
-# <file system> <mount point>   <type>  <options>       <dump>  <pass>
-/dev/mapper/ubuntu--vg-root /               ext4    errors=remount-ro 0       1
-# /boot was on /dev/sda1 during installation
-UUID=f9c76da9-0416-4fad-bedd-8cd1cfd1535b /boot           ext2    defaults        0       2
-/dev/mapper/ubuntu--vg-swap_1 none            swap    sw              0       0
+
 
 #
 # added by chenyang
 #
 
-//192.168.2.21/share /home/chenyang/mnt/share cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
+//192.168.2.21/share /home/chenyang/Mount/share cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
 
 # installer try to change file owner, but failed. So change my mind, using rcyn instead
 #chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
