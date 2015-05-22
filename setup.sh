@@ -13,13 +13,34 @@ sudo ls
 #export SVN_EDITOR=vim
 
 
+# base
+#
+sudo apt-get install sshfs x11vnc curl p7zip
 # common software
 #
-sudo apt-get install subversion git vim 
-sudo apt-get install filezilla gimp shutter imagemagick
+sudo apt-get install subversion git vim multitail
+# gui
+sudo apt-get install nautilus-open-terminal xzoom
+# tool
+sudo apt-get install vim-gnome filezilla gimp shutter imagemagick
 # hudson slave needs java runtime env
 # apache sling need java runtime env (java7 may not work)
 sudo apt-get install openjdk-6-jdk
+
+# render
+sudo apt-get install luminance-hdr
+
+# nodejs
+sudo apt-get install nodejs npm
+ln -s /usr/bin/nodejs /usr/bin/node
+# nodejs weinre
+sudo npm -g install weinre
+#$ cat .weinre/server.properties 
+#boundHost:    -all-
+#httpPort:     8080
+##reuseAddr:    true
+##readTimeout:  1
+##deathTimeout: 5
 
 # crond
 sudo ln -s /home/chenyang/env/crond /etc/cron.d/chenyang
@@ -65,3 +86,14 @@ https://github.com/sp-chenyang/performance#setup
 
 # more setup
 # http://xxd3vin.github.io/ubuntu
+
+# program profile
+# .remmina
+# .filezilla
+# .mozilla
+# .shutter
+# .subversion
+# .vim
+# .thunderbird
+# .gimp-2.8
+# .config/google-chrome
