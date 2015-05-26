@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # config option
-sshfsopt="-o reconnect,allow_other,default_permissions -o uid=1000 -o gid=1000 -o IdentityFile=/home/chenyang/.ssh/3dly.net.key -o StrictHostKeyChecking=no"
+sshfsopt="-o reconnect,default_permissions -o uid=1000 -o gid=1000 -o IdentityFile=/home/chenyang/.ssh/3dly.net.key -o StrictHostKeyChecking=no"
 davopt="-o username=admin,gid=chenyang,uid=chenyang"
-curlftpfsopt="-o allow_other,rw,uid=1000,gid=1000"
+curlftpfsopt="-o rw,uid=1000,gid=1000"
 
 #
 # function list
