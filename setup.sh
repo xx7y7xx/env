@@ -15,14 +15,14 @@ sudo ls
 
 # base
 #
-sudo apt-get install sshfs x11vnc curl p7zip
+sudo apt-get install sshfs x11vnc curl p7zip virtualbox
 # common software
 #
 sudo apt-get install subversion git vim multitail
 # gui
 sudo apt-get install nautilus-open-terminal xzoom
 # tool
-sudo apt-get install vim-gnome filezilla gimp shutter imagemagick
+sudo apt-get install vim-gnome filezilla gimp shutter imagemagick gnuplot
 # hudson slave needs java runtime env
 # apache sling need java runtime env (java7 may not work)
 sudo apt-get install openjdk-6-jdk
@@ -97,3 +97,5 @@ https://github.com/sp-chenyang/performance#setup
 # .thunderbird
 # .gimp-2.8
 # .config/google-chrome
+# /home/chenyang/.shutter
+# /home/chenyang/.config/autostart/*
