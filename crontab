@@ -1,0 +1,8 @@
+# testing
+* *    * * *   date > /tmp/xx_timestamps.txt
+# check uncommit git changes
+* *    * * *   /home/chenyang/bin/check-git.sh
+# check uncommit git changes
+* *    * * *   /home/chenyang/bin/check-xuanran001.sh
+# check xuanran001 speed
+* *    * * *   /home/chenyang/workspace/xuanran001/speed_test/time.sh
