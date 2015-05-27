@@ -87,6 +87,12 @@ https://github.com/sp-chenyang/performance#setup
 # more setup
 # http://xxd3vin.github.io/ubuntu
 
+# gnome keyboard shortcut ( MUST BE TEST !! )
+# gconftool-2 --set  new schema org.gnome.settings-daemon.plugins.media-keys.custom-keybinding
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Shutter"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "shutter -f"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "Print"
+
 # program profile
 # .remmina
 # .filezilla
