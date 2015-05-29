@@ -15,3 +15,4 @@
 //192.168.2.21/share/Personal/chenyang/Downloads /home/chenyang/Downloads cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
 //192.168.2.21/share/Personal/chenyang/Pictures /home/chenyang/Pictures cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
 //192.168.2.21/share/Personal/chenyang/workspace /home/chenyang/workspace cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
+//192.168.2.21/share/Personal/chenyang/source /home/chenyang/source cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
