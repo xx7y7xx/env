@@ -43,8 +43,8 @@ sudo npm -g install weinre
 ##readTimeout:  1
 ##deathTimeout: 5
 
-# crond
-sudo ln -s /home/chenyang/env/crond /etc/cron.d/chenyang
+# Import crontab
+crontab /home/chenyang/env/crontab
 
 # vim 
 ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
