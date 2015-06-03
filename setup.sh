@@ -25,7 +25,8 @@ sudo apt-get install nautilus-open-terminal xzoom
 sudo apt-get install vim-gnome filezilla gimp shutter imagemagick gnuplot
 # hudson slave needs java runtime env
 # apache sling need java runtime env (java7 may not work)
-sudo apt-get install openjdk-6-jdk
+# apache sling deploy need maven2
+sudo apt-get install openjdk-6-jdk maven2
 
 # render
 sudo apt-get install luminance-hdr
@@ -73,10 +74,17 @@ mkdir -p /home/chenyang/workspace
 # sudo mount -a
 
 # hudson slave dir
-mkdir -p /home/chenyang/tmp/hudsonslave
+mkdir -p /home/chenyang/opt/hudsonslave
 
 # glue performance statistics
-https://github.com/sp-chenyang/performance#setup
+#
+# Setup steps is here: https://github.com/sp-chenyang/performance#setup
+# If installer doesn't exist, you can download it at https://pypi.python.org/pypi/odfpy
+cd ~/Downloads/tmp/odfpy-0.9.6
+python setup.py build
+sudo python setup.py install
+cd -
+# Make sure ~/source/performance dir exist.
 
 # chinese input method
 # open gnome-language-selector to install dep
