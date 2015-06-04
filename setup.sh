@@ -113,3 +113,10 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/o
 # .config/google-chrome
 # /home/chenyang/.shutter
 # /home/chenyang/.config/autostart/*
+
+# Manually setup
+
+# sudo vim /etc/sysctl.conf
+## Only swap when absolutely necessary
+#vm.swappiness=1
+
