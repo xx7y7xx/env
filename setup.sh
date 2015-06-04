@@ -23,10 +23,25 @@ sudo apt-get install subversion git vim multitail
 sudo apt-get install nautilus-open-terminal xzoom
 # tool
 sudo apt-get install vim-gnome filezilla gimp shutter imagemagick gnuplot
+
 # hudson slave needs java runtime env
 # apache sling need java runtime env (java7 may not work)
 # apache sling deploy need maven2
-sudo apt-get install openjdk-6-jdk maven2
+#sudo apt-get install openjdk-6-jdk maven2
+cd /tmp/
+wget -O /tmp/jdk-6u45-linux-x64.bin http://192.168.1.3/software/jdk-6u45-linux-x64.bin
+chmod +x /tmp/jdk-6u45-linux-x64.bin
+./jdk-6u45-linux-x64.bin;
+sudo mkdir -p /usr/java
+sudo mv /tmp/jdk1.6.0_45 /usr/java;
+sudo rm -f /usr/java/latest;
+sudo ln -s /usr/java/jdk1.6.0_45 /usr/java/latest;
+sudo rm -f /usr/java/default;
+sudo ln -s /usr/java/jdk1.6.0_45 /usr/java/default;
+sudo ln -s /usr/java/jdk1.6.0_45/bin/java /usr/bin/java
+java
+cd -
+
 
 # render
 sudo apt-get install luminance-hdr
