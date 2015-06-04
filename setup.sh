@@ -29,17 +29,31 @@ sudo apt-get install vim-gnome filezilla gimp shutter imagemagick gnuplot
 # apache sling deploy need maven2
 #sudo apt-get install openjdk-6-jdk maven2
 cd /tmp/
-wget -O /tmp/jdk-6u45-linux-x64.bin http://192.168.1.3/software/jdk-6u45-linux-x64.bin
+# jdk6
+wget -O /tmp/jdk-6u45-linux-x64.bin http://192.168.2.21/share/Tool/Java/jdk-6u45-linux-x64.bin
 chmod +x /tmp/jdk-6u45-linux-x64.bin
 ./jdk-6u45-linux-x64.bin;
 sudo mkdir -p /usr/java
-sudo mv /tmp/jdk1.6.0_45 /usr/java;
-sudo rm -f /usr/java/latest;
-sudo ln -s /usr/java/jdk1.6.0_45 /usr/java/latest;
-sudo rm -f /usr/java/default;
-sudo ln -s /usr/java/jdk1.6.0_45 /usr/java/default;
+sudo mv /tmp/jdk1.6.0_45 /usr/java
+sudo rm -f /usr/java/latest
+sudo rm -f /usr/java/default
+sudo rm -f /usr/bin/java
+sudo ln -s /usr/java/jdk1.6.0_45 /usr/java/latest
+sudo ln -s /usr/java/jdk1.6.0_45 /usr/java/default
 sudo ln -s /usr/java/jdk1.6.0_45/bin/java /usr/bin/java
-java
+# jdk7
+wget -O /tmp/jdk-7u76-linux-x64.tar.gz http://192.168.2.21/share/Tool/Java/jdk-7u76-linux-x64.tar.gz
+tar zxvf jdk-7u76-linux-x64.tar.gz
+sudo mkdir -p /usr/java
+sudo mv /tmp/jdk1.7.0_76 /usr/java
+sudo rm -f /usr/java/latest
+sudo rm -f /usr/java/default
+sudo rm -f /usr/bin/java
+sudo ln -s /usr/java/jdk1.7.0_76 /usr/java/latest
+sudo ln -s /usr/java/jdk1.7.0_76 /usr/java/default
+sudo ln -s /usr/java/jdk1.7.0_76/bin/java /usr/bin/java
+
+java -version
 cd -
 
 
