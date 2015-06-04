@@ -120,3 +120,4 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/o
 ## Only swap when absolutely necessary
 #vm.swappiness=1
 
+# Import CA to Chrome for goagent
