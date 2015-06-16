@@ -15,7 +15,7 @@ sudo ls
 
 # base
 #
-sudo apt-get install sshfs x11vnc curl p7zip virtualbox
+sudo apt-get install sshfs x11vnc curl p7zip virtualbox davfs2
 # common software
 #
 sudo apt-get install subversion git vim multitail
