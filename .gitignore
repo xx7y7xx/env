@@ -2,3 +2,4 @@
 .VirtualBox/VBoxSVC.log
 .*.swp
 bin/*.osl
+.VirtualBox/*.iso
