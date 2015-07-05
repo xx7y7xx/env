@@ -32,3 +32,4 @@ chenyang@192.168.0.181:/ /home/chenyang/Mount/0.181sftp  fuse.sshfs reconnect,de
 # glue node
 chenyang@192.168.0.60:/ /home/chenyang/Mount/0.60sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
 chenyang@192.168.0.62:/ /home/chenyang/Mount/0.62sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+chenyang@192.168.0.65:/ /home/chenyang/Mount/0.65sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
