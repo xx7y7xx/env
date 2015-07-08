@@ -7,5 +7,4 @@ LOG65="/home/chenyang/Mount/0.65sftp/var/log/glue.log"
 
 multitail -s 3 \
   -ci red    $LOG60 \
-  -ci red    $LOG62 \
-  -ci green  $LOG65
+  -ci red    $LOG62
