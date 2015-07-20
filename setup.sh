@@ -56,6 +56,13 @@ sudo ln -s /usr/java/jdk1.7.0_76/bin/java /usr/bin/java
 java -version
 cd -
 
+# apache ant
+#http://192.168.2.21/art2/tool/apache-ant-1.9.6-bin.zip
+#http://pan.baidu.com/s/1bnfjqUz
+wget http://192.168.2.21/art2/tool/apache-ant-1.9.6-bin.zip -O ~/opt
+cd ~/opt
+unzip apache-ant-1.9.6-bin.zip
+cd -
 
 # render
 sudo apt-get install luminance-hdr
