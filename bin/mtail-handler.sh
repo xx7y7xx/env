@@ -10,12 +10,12 @@ LOG180="/home/chenyang/Mount/0.180sftp/var/log/npm.log"
 LOG181="/home/chenyang/Mount/0.181sftp/var/log/npm.log"
 
 multitail \
-  -ci red    $LOG174 \
-  -ci red    $LOG175 \
-  -ci red    $LOG176 \
-  -ci red    $LOG177 \
-  -ci red    $LOG178 \
-  -ci red    $LOG179 \
-  -ci red    $LOG180 \
-  -ci red    $LOG181 \
+  -ci white    $LOG174 \
+  -ci white    $LOG175 \
+  -ci white    $LOG176 \
+  -ci white    $LOG177 \
+  -ci white    $LOG178 \
+  -ci white    $LOG179 \
+  -ci white    $LOG180 \
+  -ci white    $LOG181 \
   -s 2
