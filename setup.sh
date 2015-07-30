@@ -152,6 +152,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/o
 
 # Manually setup
 
+# shutter
+#reduce jpeg quality to 10%
+
 # sudo vim /etc/sysctl.conf
 ## Only swap when absolutely necessary
 #vm.swappiness=1
