@@ -8,6 +8,11 @@ LOG178="/home/chenyang/Mount/0.178sftp/var/log/npm.log"
 LOG179="/home/chenyang/Mount/0.179sftp/var/log/npm.log"
 LOG180="/home/chenyang/Mount/0.180sftp/var/log/npm.log"
 LOG181="/home/chenyang/Mount/0.181sftp/var/log/npm.log"
+LOG182="/home/chenyang/Mount/0.182sftp/var/log/npm.log"
+LOG183="/home/chenyang/Mount/0.183sftp/var/log/npm.log"
+LOG184="/home/chenyang/Mount/0.184sftp/var/log/npm.log"
+LOG185="/home/chenyang/Mount/0.185sftp/var/log/npm.log"
+LOG186="/home/chenyang/Mount/0.186sftp/var/log/npm.log"
 
 LOG="/tmp/npm-all.$RANDOM.log"
 
