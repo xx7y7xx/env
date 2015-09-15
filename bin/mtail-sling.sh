@@ -1,11 +1,24 @@
 #!/bin/bash
 
-LOG60="/home/chenyang/Mount/0.60sftp/var/log/glue.log"
-LOG62="/home/chenyang/Mount/0.62sftp/var/log/glue.log"
-LOG64="/home/chenyang/Mount/0.64sftp/var/log/glue.log"
-LOG65="/home/chenyang/Mount/0.65sftp/var/log/glue.log"
+ROOT_DIR="/home/chenyang/Mount"
 
-multitail -s 3 \
-  -ci red    $LOG60 \
-  -ci red    $LOG62 \
-  -ci red    $LOG65
+ip_list=(
+"0.23"
+"0.24"
+"0.62"
+"0.64"
+"0.65"
+"0.23"
+)
+
+cmd="multitail -s 3"
+
+for ip in "${ip_list[@]}"
+do
+  logfile="$ROOT_DIR/${ip}sftp/var/log/glue.log"
+  if [ -f "$logfile" ];then
+    cmd=" $cmd -ci red -t $ip $logfile "
+  fi
+done
+
+$cmd
