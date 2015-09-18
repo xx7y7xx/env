@@ -1,6 +1,7 @@
-
-
 # added by chenyang
+
+127.0.0.1	localhost
+127.0.1.1	chenyang.spolo.org
 
 # dev
 #172.16.24.128	devvm.spolo.org	#hide
@@ -11,13 +12,22 @@
 
 # server
 192.168.1.153   glue.spolo.org	#hide
+192.168.2.21    ci.spolo.org	#hide
 
-#==== www.xuanran001.com
+#==== xuanran001.com
+192.168.0.61	xuanran001.com
 192.168.0.61	www.xuanran001.com
+#192.168.2.64	www.xuanran001.com
 #192.168.2.178	www.xuanran001.com
 #192.168.2.179	www.xuanran001.com
 #192.168.2.180	www.xuanran001.com
 #192.168.2.181	www.xuanran001.com
+#211.149.184.230 www.xuanran001.com  #四川电信 
+#====
+
+#==== feilujiaju.com
+192.168.0.61	feilujiaju.com
+192.168.0.61	www.feilujiaju.com
 #====
 
 #==== www.hellojia.com
@@ -36,9 +46,6 @@
 #192.168.2.181	conf.xuanran001.com
 #====
 
-192.168.0.60	www.jiandan001.com
-
-
 192.168.0.101   www.spolo.org		#hide
 192.168.0.101   spolo.org			#hide
 192.168.0.101   gme.spolo.org		#hide
@@ -56,6 +63,4 @@
 #192.168.0.102	anli.jiandan001.com	#hide
 192.168.0.102	3d-ces.com			#hide
 192.168.0.102	3d-dgj.com			#hide
-
-
 
