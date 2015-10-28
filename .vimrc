@@ -13,6 +13,9 @@ set expandtab
 
 set hls
 
+" 80 Column mode
+set colorcolumn=81
+
 "
 " custom syntax hightlight
 "
