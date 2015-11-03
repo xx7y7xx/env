@@ -7,4 +7,4 @@ if [ -z $ip ]; then
   exit 1
 fi
 
-ssh -i ~/.ssh/3dly.net.key  -o StrictHostKeyChecking=no 192.168.$1
+ssh -i ~/.ssh/id_rsa  -o StrictHostKeyChecking=no 192.168.$1

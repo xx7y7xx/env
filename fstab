@@ -7,11 +7,11 @@
 //192.168.2.21/art2 /home/chenyang/Mount/share cifs rw,username=nobody,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
 
 # installer try to change file owner, but failed. So change my mind, using rcyn instead
-#chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+#chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
 
 # home sub dir
-#chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Pictures /home/chenyang/Pictures  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-#chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Downloads /home/chenyang/Downloads fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+#chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Pictures /home/chenyang/Pictures  fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+#chenyang@192.168.2.21:/public/www/share/Personal/chenyang/Downloads /home/chenyang/Downloads fuse.sshfs reconnect,allow_other,default_permissions,_netdev,allow_other,reconnect,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
 
 #//192.168.2.21/share/Personal/chenyang/Downloads /home/chenyang/Downloads cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
 #//192.168.2.21/share/Personal/chenyang/Pictures /home/chenyang/Pictures cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
@@ -20,33 +20,33 @@
 #//192.168.2.21/share/Personal/chenyang/source /home/chenyang/source cifs rw,username=samba-guest,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
 
 # handler
-chenyang@192.168.0.174:/ /home/chenyang/Mount/0.174sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.175:/ /home/chenyang/Mount/0.175sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.176:/ /home/chenyang/Mount/0.176sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.177:/ /home/chenyang/Mount/0.177sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.178:/ /home/chenyang/Mount/0.178sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.179:/ /home/chenyang/Mount/0.179sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.180:/ /home/chenyang/Mount/0.180sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.181:/ /home/chenyang/Mount/0.181sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.182:/ /home/chenyang/Mount/0.182sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.183:/ /home/chenyang/Mount/0.183sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.184:/ /home/chenyang/Mount/0.184sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.185:/ /home/chenyang/Mount/0.185sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.186:/ /home/chenyang/Mount/0.186sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+chenyang@192.168.0.174:/ /home/chenyang/Mount/0.174sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.175:/ /home/chenyang/Mount/0.175sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.176:/ /home/chenyang/Mount/0.176sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.177:/ /home/chenyang/Mount/0.177sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.178:/ /home/chenyang/Mount/0.178sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.179:/ /home/chenyang/Mount/0.179sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.180:/ /home/chenyang/Mount/0.180sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.181:/ /home/chenyang/Mount/0.181sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.182:/ /home/chenyang/Mount/0.182sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.183:/ /home/chenyang/Mount/0.183sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.184:/ /home/chenyang/Mount/0.184sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.185:/ /home/chenyang/Mount/0.185sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.186:/ /home/chenyang/Mount/0.186sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
 
 # glue node
-chenyang@192.168.0.60:/ /home/chenyang/Mount/0.60sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.62:/ /home/chenyang/Mount/0.62sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.64:/ /home/chenyang/Mount/0.64sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.65:/ /home/chenyang/Mount/0.65sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.23:/ /home/chenyang/Mount/0.23sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
-chenyang@192.168.0.24:/ /home/chenyang/Mount/0.24sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+chenyang@192.168.0.60:/ /home/chenyang/Mount/0.60sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.62:/ /home/chenyang/Mount/0.62sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.64:/ /home/chenyang/Mount/0.64sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.65:/ /home/chenyang/Mount/0.65sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.23:/ /home/chenyang/Mount/0.23sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
+chenyang@192.168.0.24:/ /home/chenyang/Mount/0.24sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
 
 # master
-chenyang@192.168.0.61:/ /home/chenyang/Mount/0.61sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+chenyang@192.168.0.61:/ /home/chenyang/Mount/0.61sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
 
 # postgres
-chenyang@192.168.0.21:/ /home/chenyang/Mount/0.21sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+chenyang@192.168.0.21:/ /home/chenyang/Mount/0.21sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0
 
 # vsftp
-chenyang@192.168.0.22:/ /home/chenyang/Mount/0.22sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/3dly.net.key 0 0
+chenyang@192.168.0.22:/ /home/chenyang/Mount/0.22sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no 0 0

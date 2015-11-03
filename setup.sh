@@ -99,7 +99,7 @@ cat /home/chenyang/env/hosts >> /etc/hosts
 ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
 
 # mount opt
-#sshfs -o reconnect,allow_other,default_permissions -o uid=1000 -o gid=1000 -o IdentityFile=/home/chenyang/.ssh/3dly.net.key -o StrictHostKeyChecking=no chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt
+#sshfs -o reconnect,allow_other,default_permissions -o uid=1000 -o gid=1000 -o StrictHostKeyChecking=no chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt
 
 # mount point
 sudo chown chenyang.chenyang /etc/fstab
