@@ -1,3 +1,9 @@
 [user]
 	email = d3vin.chen@gmail.com
 	name = Devin Chen
+
+[push]
+	default = simple
+
+# Sample of git config file
+#https://gist.github.com/pksunkara/988716
