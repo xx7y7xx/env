@@ -1,8 +1,9 @@
 dev
 ===
 
-dev env
-
-## vbox
-
-vbox的磁盘镜像如果通过sshfs走，貌似不能使用千兆带宽.
+```
+sudo apt-get install git
+mkdir source
+cd source
+git clone git@github.com:xxd3vin/env.git
+```
