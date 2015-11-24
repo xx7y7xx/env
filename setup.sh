@@ -1,77 +1,90 @@
 #!/bin/bash
 
+GLUEIP="192.168.1.153"                                                           
+SVNOPT=" --username=ci --password=sp12345678 --no-auth-cache --non-interactive --force "
+TOOLS_URL="http://www.xuanran001.com/public/tools"
+
 # get root
+echo "Input password to get root permission."
 sudo ls
 
 #
-# applend this to .bashrc
+# Installation
 #
-## User specific environment and startup programs
-#PATH=$PATH:$HOME/.local/bin:$HOME/bin
-#export PATH
-## use vim to write svn commit log
-#export SVN_EDITOR=vim
 
+# 1. MUST INSTALL tools and base system.
 
-# base
-#
-sudo apt-get install sshfs x11vnc curl p7zip virtualbox davfs2
-# common software
-#
-sudo apt-get install subversion git vim multitail
-# gui
-sudo apt-get install nautilus-open-terminal xzoom
-# tool
-sudo apt-get install vim-gnome filezilla gimp shutter imagemagick gnuplot
+sudo apt-get install -y git vim subversion curl sshfs
+sudo apt-get install -y openssh-server
 
 # hudson slave needs java runtime env
 # apache sling need java runtime env (java7 may not work)
 # apache sling deploy need maven2
-#sudo apt-get install openjdk-6-jdk maven2
-cd /tmp/
-# jdk6
-wget -O /tmp/jdk-6u45-linux-x64.bin http://192.168.2.21/share/Tool/Java/jdk-6u45-linux-x64.bin
-chmod +x /tmp/jdk-6u45-linux-x64.bin
-./jdk-6u45-linux-x64.bin;
-sudo mkdir -p /usr/java
-sudo mv /tmp/jdk1.6.0_45 /usr/java
-sudo rm -f /usr/java/latest
-sudo rm -f /usr/java/default
-sudo rm -f /usr/bin/java
-sudo ln -s /usr/java/jdk1.6.0_45 /usr/java/latest
-sudo ln -s /usr/java/jdk1.6.0_45 /usr/java/default
-sudo ln -s /usr/java/jdk1.6.0_45/bin/java /usr/bin/java
-# jdk7
-wget -O /tmp/jdk-7u76-linux-x64.tar.gz http://192.168.2.21/share/Tool/Java/jdk-7u76-linux-x64.tar.gz
-tar zxvf jdk-7u76-linux-x64.tar.gz
-sudo mkdir -p /usr/java
-sudo mv /tmp/jdk1.7.0_76 /usr/java
-sudo rm -f /usr/java/latest
-sudo rm -f /usr/java/default
-sudo rm -f /usr/bin/java
-sudo ln -s /usr/java/jdk1.7.0_76 /usr/java/latest
-sudo ln -s /usr/java/jdk1.7.0_76 /usr/java/default
-sudo ln -s /usr/java/jdk1.7.0_76/bin/java /usr/bin/java
+#sudo apt-get install -y openjdk-6-jdk maven2
+svn export $SVNOPT http://$GLUEIP/svn/glue/trunk/infrastructure/192.168.1.3/web/spinst/java.sh /tmp/java.sh
+sudo /tmp/java.sh
 
-java -version
-cd -
+# 2. Recommanded tools and base system.
+
+# other base system.
+sudo apt-get install -y x11vnc
+# other common tools
+sudo apt-get install -y multitail p7zip davfs2 gnuplot
+# other common software
+sudo apt-get install -y nautilus-open-terminal xzoom
+sudo apt-get install -y vim-gnome filezilla gimp shutter virtualbox
+# render/image
+sudo apt-get install -y luminance-hdr imagemagick
+
+# nodejs
+sudo apt-get install -y nodejs npm
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+# nodejs weinre
+sudo npm -g install weinre
+
+# glue performance statistics
+#
+# Setup steps is here: https://github.com/sp-chenyang/performance#setup
+# If installer doesn't exist, you can download it at https://pypi.python.org/pypi/odfpy
+#cd ~/Downloads/tmp/odfpy-0.9.6
+#python setup.py build
+#sudo python setup.py install
+#cd -
+# Make sure ~/source/performance dir exist.
+
+#
+# System config
+#
+
+# Import crontab
+crontab /home/chenyang/env/crontab
+
+# hosts
+sudo chown chenyang.chenyang /etc/hosts
+cat /home/chenyang/env/hosts >> /etc/hosts
+
+# mount point
+sudo chown chenyang.chenyang /etc/fstab
+cat /home/chenyang/env/fstab  >> /etc/fstab
+
+# Only swap when absolutely necessary
+sudo chown chenyang.chenyang /etc/sysctl.conf
+echo "vm.swappiness=1" >> /etc/sysctl.conf
+
+#
+# User installation
+#
 
 # apache ant
 #http://192.168.2.21/art2/tool/apache-ant-1.9.6-bin.zip
 #http://pan.baidu.com/s/1bnfjqUz
-wget http://192.168.2.21/art2/tool/apache-ant-1.9.6-bin.zip -O ~/opt
-cd ~/opt
-unzip apache-ant-1.9.6-bin.zip
-cd -
+wget http://www.xuanran001.com/public/tools/apache-ant-1.9.6-bin.zip -O /tmp/apache-ant-1.9.6-bin.zip
+unzip /tmp/apache-ant-1.9.6-bin.zip -d /home/chenyang/opt/apache-ant-1.9.6
 
-# render
-sudo apt-get install luminance-hdr
+#
+# User config
+#
 
-# nodejs
-sudo apt-get install nodejs npm
-ln -s /usr/bin/nodejs /usr/bin/node
-# nodejs weinre
-sudo npm -g install weinre
 #$ cat .weinre/server.properties 
 #boundHost:    -all-
 #httpPort:     8080
@@ -79,8 +92,12 @@ sudo npm -g install weinre
 ##readTimeout:  1
 ##deathTimeout: 5
 
-# Import crontab
-crontab /home/chenyang/env/crontab
+# Append this to .bashrc
+## User specific environment and startup programs
+#PATH=$PATH:$HOME/.local/bin:$HOME/bin
+#export PATH
+## use vim to write svn commit log
+#export SVN_EDITOR=vim
 
 # vim 
 ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
@@ -91,19 +108,11 @@ ln -s /home/chenyang/env/.VirtualBox /home/chenyang/.VirtualBox
 # bin
 ln -s /home/chenyang/env/bin /home/chenyang/bin
 
-# hosts
-sudo chown chenyang.chenyang /etc/hosts
-cat /home/chenyang/env/hosts >> /etc/hosts
-
 # git config
 ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
 
 # mount opt
 #sshfs -o reconnect,allow_other,default_permissions -o uid=1000 -o gid=1000 -o StrictHostKeyChecking=no chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt
-
-# mount point
-sudo chown chenyang.chenyang /etc/fstab
-sudo cat /home/chenyang/env/fstab  >> /etc/fstab
 
 mkdir -p /home/chenyang/workspace
 
@@ -111,16 +120,6 @@ mkdir -p /home/chenyang/workspace
 
 # hudson slave dir
 mkdir -p /home/chenyang/opt/hudsonslave
-
-# glue performance statistics
-#
-# Setup steps is here: https://github.com/sp-chenyang/performance#setup
-# If installer doesn't exist, you can download it at https://pypi.python.org/pypi/odfpy
-cd ~/Downloads/tmp/odfpy-0.9.6
-python setup.py build
-sudo python setup.py install
-cd -
-# Make sure ~/source/performance dir exist.
 
 # chinese input method
 # open gnome-language-selector to install dep
@@ -154,9 +153,5 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/o
 
 # shutter
 #reduce jpeg quality to 10%
-
-# sudo vim /etc/sysctl.conf
-## Only swap when absolutely necessary
-#vm.swappiness=1
 
 # Import CA to Chrome for goagent
