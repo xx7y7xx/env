@@ -12,69 +12,6 @@ sudo ls
 # Installation
 #
 
-# 1. MUST INSTALL tools and base system.
-
-sudo apt-get install -y git vim subversion curl sshfs
-sudo apt-get install -y openssh-server
-
-# hudson slave needs java runtime env
-# apache sling need java runtime env (java7 may not work)
-# apache sling deploy need maven2
-#sudo apt-get install -y openjdk-6-jdk maven2
-svn export $SVNOPT http://$GLUEIP/svn/glue/trunk/infrastructure/192.168.1.3/web/spinst/java.sh /tmp/java.sh
-sudo /tmp/java.sh
-
-# 2. Recommanded tools and base system.
-
-# other base system.
-sudo apt-get install -y x11vnc
-# other common tools
-sudo apt-get install -y multitail p7zip davfs2 gnuplot
-# other common software
-sudo apt-get install -y nautilus-open-terminal xzoom
-sudo apt-get install -y vim-gnome filezilla gimp shutter virtualbox
-# render/image
-sudo apt-get install -y luminance-hdr imagemagick
-
-# nodejs
-sudo apt-get install -y nodejs npm
-sudo ln -s /usr/bin/nodejs /usr/bin/node
-# nodejs weinre
-sudo npm -g install weinre
-
-# glue performance statistics
-#
-# Setup steps is here: https://github.com/sp-chenyang/performance#setup
-# If installer doesn't exist, you can download it at https://pypi.python.org/pypi/odfpy
-#cd ~/Downloads/tmp/odfpy-0.9.6
-#python setup.py build
-#sudo python setup.py install
-#cd -
-# Make sure ~/source/performance dir exist.
-
-#
-# System config
-#
-
-# Import crontab
-crontab /home/chenyang/env/crontab
-
-# hosts
-sudo chown chenyang.chenyang /etc/hosts
-cat /home/chenyang/env/hosts >> /etc/hosts
-
-# mount point
-sudo chown chenyang.chenyang /etc/fstab
-cat /home/chenyang/env/fstab  >> /etc/fstab
-
-# Only swap when absolutely necessary
-sudo chown chenyang.chenyang /etc/sysctl.conf
-echo "vm.swappiness=1" >> /etc/sysctl.conf
-
-#
-# User installation
-#
-
 # apache ant
 #http://192.168.2.21/art2/tool/apache-ant-1.9.6-bin.zip
 #http://pan.baidu.com/s/1bnfjqUz
@@ -82,7 +19,7 @@ wget http://www.xuanran001.com/public/tools/apache-ant-1.9.6-bin.zip -O /tmp/apa
 unzip /tmp/apache-ant-1.9.6-bin.zip -d /home/chenyang/opt/apache-ant-1.9.6
 
 #
-# User config
+# Config
 #
 
 #$ cat .weinre/server.properties 
