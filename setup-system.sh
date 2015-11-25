@@ -32,7 +32,7 @@ sudo apt-get install -y x11vnc
 sudo apt-get install -y multitail p7zip davfs2 gnuplot
 # other common software
 sudo apt-get install -y nautilus-open-terminal xzoom
-sudo apt-get install -y vim-gnome filezilla gimp shutter virtualbox
+sudo apt-get install -y vim-gnome filezilla gimp shutter virtualbox meld
 # render/image
 sudo apt-get install -y luminance-hdr imagemagick
 
