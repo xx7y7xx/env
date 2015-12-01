@@ -109,6 +109,7 @@ sftpmount()
 
     run "fusermount -u \"$dir\""
     if [ "X$umflag" != "Xu" ]; then
+        # e.g. sshfs -o reconnect,default_permissions -o uid=1000 -o gid=1000 -o StrictHostKeyChecking=no chenyang@192.168.1.1:/ /home/chenyang/Mount/1.1sftp
         run "sshfs $sshfsopt chenyang@${ip}:/ \"$dir\""
     fi
 
