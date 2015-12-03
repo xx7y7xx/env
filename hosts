@@ -1,7 +1,17 @@
+127.0.0.1	localhost #hide
+127.0.1.1	chenyang #hide
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback #hide
+fe00::0 ip6-localnet #hide
+ff00::0 ip6-mcastprefix #hide
+ff02::1 ip6-allnodes #hide
+ff02::2 ip6-allrouters #hide
+
 # added by chenyang
 
-127.0.0.1	localhost
-127.0.1.1	chenyang.spolo.org
+127.0.0.1	localhost #hide
+127.0.0.1	chenyang.spolo.org #hide
 
 # dev
 #172.16.24.128	devvm.spolo.org	#hide
@@ -15,30 +25,22 @@
 192.168.2.21    ci.spolo.org	#hide
 
 #==== xuanran001.com
-192.168.0.61	xuanran001.com
+192.168.0.61	xuanran001.com #hide
 192.168.0.61	www.xuanran001.com
-#192.168.2.64	www.xuanran001.com
 #192.168.2.178	www.xuanran001.com
 #192.168.2.179	www.xuanran001.com
 #192.168.2.180	www.xuanran001.com
-#192.168.2.181	www.xuanran001.com
-#211.149.184.230 www.xuanran001.com  #四川电信 
+#192.168.0.209	www.xuanran001.com
+#61.51.195.182	www.xuanran001.com
+#192.168.1.209	www.xuanran001.com
 #====
 
-#==== feilujiaju.com
+#==== feilujiaju.com #hide
 192.168.0.61	feilujiaju.com
 192.168.0.61	www.feilujiaju.com
 #====
 
-#==== www.hellojia.com
-192.168.0.61	www.hellojia.com
-#192.168.2.178	www.hellojia.com
-#192.168.2.179	www.hellojia.com
-#192.168.2.180	www.hellojia.com
-#192.168.2.181	www.hellojia.com
-#====
-
-#==== conf.xuanran001.com
+#==== conf.xuanran001.com #hide
 192.168.0.61	conf.xuanran001.com
 #192.168.2.178	conf.xuanran001.com
 #192.168.2.179	conf.xuanran001.com
