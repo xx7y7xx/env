@@ -13,8 +13,6 @@ fi
 ROOT_DIR="/home/chenyang/Mount"
 
 ip_list=(
-"0.23"
-"0.24"
 "0.60"
 "0.62"
 "0.64"
