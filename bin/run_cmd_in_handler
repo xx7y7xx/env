@@ -1,38 +1,35 @@
 #!/bin/bash
 
 ip_list=(
-"192.168.0.174"
 "192.168.0.175"
 "192.168.0.176"
 "192.168.0.177"
 "192.168.0.178"
 "192.168.0.179"
-"192.168.0.180"
 "192.168.0.181"
 "192.168.0.182"
 "192.168.0.183"
 "192.168.0.184"
 "192.168.0.185"
 "192.168.0.186"
+"192.168.0.187"
+"192.168.0.188"
 )
 
-cmd_list=(
-"sudo /etc/init.d/crond restart"
-)
+if [ "X$1" = "X" ]; then
+  cmd_list=(
+  "sudo /etc/init.d/boinc-client stop"
+  "echo '#* * * * * ps --ppid \`pgrep node\` &> /dev/null || boinccmd --set_run_mode always' > /tmp/xxyy"
+  "echo '* * * * * ps --ppid \`pgrep node\` &> /dev/null && boinccmd --set_run_mode never' >> /tmp/xxyy"
+  "sudo -u boinc crontab /tmp/xxyy"
+  )
+else
+  cmd_list=(
+  "$1"
+  )
+fi
 
-cmd_list=(
-"sudo /etc/init.d/boinc-client stop"
-"echo '#* * * * * ps --ppid \`pgrep node\` &> /dev/null || boinccmd --set_run_mode always' > /tmp/xxyy"
-"echo '* * * * * ps --ppid \`pgrep node\` &> /dev/null && boinccmd --set_run_mode never' >> /tmp/xxyy"
-"sudo -u boinc crontab /tmp/xxyy"
-)
-
-cmd_list=(
-"sudo rm -rf /var/local/blender-2.75a-linux-glibc211-x86_64"
-"sudo rm -rf /var/local/blender-2.75-linux-glibc211-x86_64"
-)
-
-# debug only
+## debug only
 #cmd_list=(
 #"sudo ls /root"
 #)
@@ -43,6 +40,6 @@ do
   for cmd in "${cmd_list[@]}"
   do
     echo "$cmd"
-    ssh -t -i ~/.ssh/3dly.net.key  -o StrictHostKeyChecking=no $ip "$cmd"
+    ssh -t -i ~/.ssh/id_rsa  -o StrictHostKeyChecking=no $ip "$cmd"
   done
 done
