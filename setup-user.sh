@@ -92,3 +92,13 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/o
 #reduce jpeg quality to 10%
 
 # Import CA to Chrome for goagent
+
+# dir
+# - ~/source common source code dir
+# - ~/glue glue svn local working copy
+# - ~/wware wware git local branch
+#   - ~/wware/projects wware projects in svn
+#     - ~/wware/projects/wware_be_sample a soft link to ~/wware/wware_be_sample
+#   - ~/wware/wware_be_sample wware samples in github
+
+#ln -s ~/wware/wware_be_sample ~/wware/projects/wware_be_sample
