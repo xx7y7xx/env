@@ -29,7 +29,7 @@ chenyang@192.168.0.175:/ /home/chenyang/Mount/0.175sftp  fuse.sshfs reconnect,de
 chenyang@192.168.0.176:/ /home/chenyang/Mount/0.176sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
 chenyang@192.168.0.177:/ /home/chenyang/Mount/0.177sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
 chenyang@192.168.0.178:/ /home/chenyang/Mount/0.178sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
-chenyang@192.168.0.179:/ /home/chenyang/Mount/0.179sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
+#chenyang@192.168.0.179:/ /home/chenyang/Mount/0.179sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
 #chenyang@192.168.0.180:/ /home/chenyang/Mount/0.180sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
 chenyang@192.168.0.181:/ /home/chenyang/Mount/0.181sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
 chenyang@192.168.0.182:/ /home/chenyang/Mount/0.182sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
@@ -62,3 +62,6 @@ chenyang@192.168.0.71:/  /home/chenyang/Mount/0.71sftp   fuse.sshfs reconnect,de
 chenyang@192.168.0.102:/ /home/chenyang/Mount/0.102sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
 # bitlanyuan.com 0.101
 chenyang@192.168.0.101:/ /home/chenyang/Mount/0.101sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
+
+# production server
+root@wy.ke.cc:/ /home/chenyang/Mount/wy.ke.cc_sftp  fuse.sshfs reconnect,default_permissions,_netdev,allow_other,uid=1000,gid=1000,StrictHostKeyChecking=no,IdentityFile=/home/chenyang/.ssh/id_rsa 0 0
