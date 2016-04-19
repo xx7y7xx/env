@@ -4,12 +4,18 @@
 
 sgp="128.199.90.7"
 sfo1="159.203.243.15"
+nyc2="107.170.4.162"
 
-if [ "X$1" = "X1" ]; then
-  ip=$sfo1
-else
-  ip=$sgp
-fi
+case "$1" in
+  sgp) ip=$sgp
+  ;;
+  sfo1) ip=$sfo1
+  ;;
+  nyc2) ip=$nyc2
+  ;;
+  *) ip=$sgp
+  ;;
+esac
 
 echo $ip
 
