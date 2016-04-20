@@ -29,7 +29,12 @@ const snippets = {
   "paymentgetpaymentmethod": {
     "id": "a32ec50963c01d7008e70ea860bf62bd",
     "name": "获取支付方式列表",
-    "desc": "通过调用payment module的<code>get_payment_method()</code>方法来获取当前网站启用的支付方式列表数组。<br>维护者：<a href='mailto:d3vin.chen@gmail.com'>d3vin.chen@gmail.com</a><br>版本：rev 0.2"
+    "desc": "通过调用payment module的<code>get_payment_method()</code>方法来获取当前网站启用的支付方式列表数组。<br>维护者：<a href='mailto:d3vin.chen@gmail.com'>d3vin.chen@gmail.com</a><br>版本：rev 0.3"
+  },
+  "syslogsyslog": {
+    "id": "e0f2f4fbd96bb1d5d96bb1d5d96bb1d5",
+    "name": "系统日志",
+    "desc": "通过调用syslog module中的<code>req.syslog()</code>系统日志函数，将日志正文写入服务器端日志文件和数据库中。<br>维护者：<a href='mailto:d3vin.chen@gmail.com'>d3vin.chen@gmail.com</a><br>版本：rev 0.1"
   }
 };
 const exec = require('child_process').exec;

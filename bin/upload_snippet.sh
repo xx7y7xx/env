@@ -18,4 +18,4 @@ curl -s -X POST \
   -F procin="默认值" \
   -F tags="默认值" \
   -F insertpoint="默认值" \
-  -F generator="@$upload" 1> /dev/null
+  -F generator="@$upload" #1> /dev/null
