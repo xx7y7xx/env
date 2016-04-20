@@ -79,6 +79,8 @@ const generator_src_path = path.join(dir_name, "generator.js");
 const generator_tmpl_path = path.join(dir_name, "generator.tpl.js");
 // paymentgetpaymentmethod/schema.js
 const schema_path = path.join(dir_name, "schema.json");
+// paymentgetpaymentmethod/schema_param_severity.js
+const schema_param_severity_path = path.join(dir_name, "schema_param_severity.json");
 // paymentgetpaymentmethod/intro.html
 const intro_path = path.join(dir_name, "intro.html");
 // paymentgetpaymentmethod/snippet.js
@@ -174,6 +176,10 @@ tmpl_params = {
 
 if (fs.existsSync(schema_path)) {
   tmpl_params.schema = loadfile(schema_path);
+}
+
+if (fs.existsSync(schema_param_severity_path)) {
+  tmpl_params.schema_param_severity = loadfile(schema_param_severity_path);
 }
 
 // generate generator.js file
