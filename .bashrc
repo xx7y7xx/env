@@ -10,3 +10,6 @@ export SVN_EDITOR=vim
 # nw.js
 export nw=~/opt/nwjs-v0.12.3-linux-x64/nw
 export nw_sdk=~/opt/nwjs-sdk-v0.13.0-rc3-linux-x64/nw
+
+# make modules available to the Node.js REPL
+export NODE_PATH=/usr/local/lib/node_modules
