@@ -174,7 +174,7 @@ tmpl_params = {
 };
 
 if (fs.existsSync(intro_path)) {
-  tmpl_params.intro = loadfile(intro_path);
+  tmpl_params.intro = file2str(intro_path);
 }
 
 if (fs.existsSync(schema_path)) {
