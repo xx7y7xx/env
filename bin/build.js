@@ -37,7 +37,11 @@ const snippets = {
     "desc": "通过调用syslog module中的<code>req.syslog()</code>系统日志函数，将日志正文写入服务器端日志文件和数据库中。<br>维护者：<a href='mailto:d3vin.chen@gmail.com'>d3vin.chen@gmail.com</a><br>版本：rev 0.1"
   }
 };
+
 const exec = require('child_process').exec;
+const babel = require('babel-core');
+const es2015 = require('babel-preset-es2015');
+
 const ERROR_CMDLINE_OPTIONS_PARSING = 1;
 const ERROR_SNIPPET_NAME_NOT_FOUND = 2;
 const ERROR_COMPILE = 3;
@@ -191,6 +195,18 @@ doT.templateSettings.strip = false;
 generator_tmpl = doT.template(loadfile(generator_tmpl_path));
 
 fs.writeFileSync(generator_src_path, generator_tmpl(tmpl_params));
+
+// Compile ES2015 to ES5
+fs.writeFileSync(
+  generator_src_path,
+  babel.transformFileSync(
+    generator_src_path, {
+      "presets": [
+        es2015
+      ]
+    }
+  ).code
+);
 
 if (debug_mode) {
   upload_snippet(snippet, generator_src_path, job_complete);
