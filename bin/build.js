@@ -197,6 +197,7 @@ generator_tmpl = doT.template(loadfile(generator_tmpl_path));
 fs.writeFileSync(generator_src_path, generator_tmpl(tmpl_params));
 
 // Compile ES2015 to ES5
+console.log("Compile ES2015 to ES5...");
 fs.writeFileSync(
   generator_src_path,
   babel.transformFileSync(
