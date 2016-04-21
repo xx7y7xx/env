@@ -170,9 +170,12 @@ function job_complete() {
 }
 
 tmpl_params = {
-  "snippet": file2tmpl(snippet_path),
-  "intro": file2str(intro_path)
+  "snippet": file2tmpl(snippet_path)
 };
+
+if (fs.existsSync(intro_path)) {
+  tmpl_params.intro = loadfile(intro_path);
+}
 
 if (fs.existsSync(schema_path)) {
   tmpl_params.schema = loadfile(schema_path);
