@@ -1,0 +1,41 @@
+#!/bin/bash
+
+ip_list=(
+"192.168.0.60"
+"192.168.0.62"
+"192.168.0.64"
+"192.168.0.65"
+"192.168.0.66"
+"192.168.0.67"
+"192.168.0.68"
+"192.168.0.70"
+"192.168.0.71"
+)
+
+if [ "X$1" = "X" ]; then
+  cmd_list=(
+  "sudo /etc/init.d/boinc-client stop"
+  "echo '#* * * * * ps --ppid \`pgrep node\` &> /dev/null || boinccmd --set_run_mode always' > /tmp/xxyy"
+  "echo '* * * * * ps --ppid \`pgrep node\` &> /dev/null && boinccmd --set_run_mode never' >> /tmp/xxyy"
+  "sudo -u boinc crontab /tmp/xxyy"
+  )
+else
+  cmd_list=(
+  "$1"
+  )
+fi
+
+## debug only
+#cmd_list=(
+#"sudo ls /root"
+#)
+
+for ip in "${ip_list[@]}"
+do
+  echo $ip
+  for cmd in "${cmd_list[@]}"
+  do
+    echo "$cmd"
+    ssh -t -i ~/.ssh/id_rsa  -o StrictHostKeyChecking=no $ip "$cmd"
+  done
+done
