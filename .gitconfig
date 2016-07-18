@@ -1,12 +1,13 @@
 [core]
   quotepath = false
+  editor = vim
 
 [user]
-	email = d3vin.chen@gmail.com
-	name = Devin Chen
+  email = d3vin.chen@gmail.com
+  name = Devin Chen
 
 [push]
-	default = simple
+  default = simple
 
 # Sample of git config file
 #https://gist.github.com/pksunkara/988716
