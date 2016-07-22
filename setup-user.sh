@@ -36,6 +36,10 @@ unzip /tmp/apache-ant-1.9.6-bin.zip -d /home/chenyang/opt/apache-ant-1.9.6
 ## use vim to write svn commit log
 #export SVN_EDITOR=vim
 
+# ssh client
+mkdir -p ~/.ssh && chmod 700 ~/.ssh
+ln -s /home/chenyang/env/ssh_config /home/chenyang/.ssh/config
+
 # vim 
 ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
 
