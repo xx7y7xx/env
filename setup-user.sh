@@ -52,6 +52,9 @@ ln -s /home/chenyang/env/bin /home/chenyang/bin
 # git config
 ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
 
+# node
+ln -s /home/chenyang/env/.npmrc /home/chenyang/.npmrc
+
 # mount opt
 #sshfs -o reconnect,allow_other,default_permissions -o uid=1000 -o gid=1000 -o StrictHostKeyChecking=no chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt
 
