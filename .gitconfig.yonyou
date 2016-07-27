@@ -1,0 +1,16 @@
+[core]
+  quotepath = false
+  # Almost all developers are using M$ in yonyou.com,
+  # make sure CRLF is using under working directory.
+  autocrlf = true
+  editor = vim
+
+[user]
+  email = chenyangf@yonyou.com
+  name = chenyangf
+
+[push]
+  default = simple
+
+# Sample of git config file
+#https://gist.github.com/pksunkara/988716

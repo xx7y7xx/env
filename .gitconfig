@@ -1,6 +1,6 @@
 [core]
   quotepath = false
-  autocrlf = true
+  #autocrlf = false
   editor = vim
 
 [user]

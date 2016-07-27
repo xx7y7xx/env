@@ -1,5 +1,49 @@
 #!/bin/bash
 
+################
+# common setup #
+################
+
+# Append this to .bashrc
+## d3vin-start
+## User specific environment and startup programs
+#PATH=$PATH:$HOME/bin
+#export PATH
+## use vim to write svn commit log
+#export SVN_EDITOR=vim
+## d3vin-end
+
+# ssh client
+mkdir -p ~/.ssh && chmod 700 ~/.ssh
+ln -s /home/chenyang/env/ssh_config /home/chenyang/.ssh/config
+
+# vim 
+ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
+
+# bin
+ln -s /home/chenyang/env/bin /home/chenyang/bin
+
+# git config
+ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
+#ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig.yonyou
+
+# node
+ln -s /home/chenyang/env/.npmrc /home/chenyang/.npmrc
+
+# VirtualBox
+ln -s /home/chenyang/env/.VirtualBox /home/chenyang/.VirtualBox
+
+##########
+# yonyou #
+##########
+
+# git config
+ln -s /home/chenyang/env/.gitconfig.yonyou /home/chenyang/.gitconfig
+
+###########
+# sanpolo #
+###########
+
 GLUEIP="192.168.1.153"                                                           
 SVNOPT=" --username=ci --password=sp12345678 --no-auth-cache --non-interactive --force "
 TOOLS_URL="http://www.xuanran001.com/public/tools"
@@ -29,31 +73,8 @@ unzip /tmp/apache-ant-1.9.6-bin.zip -d /home/chenyang/opt/apache-ant-1.9.6
 ##readTimeout:  1
 ##deathTimeout: 5
 
-# Append this to .bashrc
-## User specific environment and startup programs
-#PATH=$PATH:$HOME/.local/bin:$HOME/bin
-#export PATH
-## use vim to write svn commit log
-#export SVN_EDITOR=vim
-
-# ssh client
-mkdir -p ~/.ssh && chmod 700 ~/.ssh
-ln -s /home/chenyang/env/ssh_config /home/chenyang/.ssh/config
-
-# vim 
-ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
-
-# VirtualBox
-ln -s /home/chenyang/env/.VirtualBox /home/chenyang/.VirtualBox
-
-# bin
-ln -s /home/chenyang/env/bin /home/chenyang/bin
-
 # git config
 ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
-
-# node
-ln -s /home/chenyang/env/.npmrc /home/chenyang/.npmrc
 
 # mount opt
 #sshfs -o reconnect,allow_other,default_permissions -o uid=1000 -o gid=1000 -o StrictHostKeyChecking=no chenyang@192.168.2.21:/home/chenyang/cloud/opt /opt
