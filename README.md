@@ -10,7 +10,7 @@ dev
 ```
 sudo apt-get install git
 cd ~
-git clone git@github.com:xxd3vin/env.git --config core.autocrlf=false
+git clone --recursive --config core.autocrlf=false git@github.com:xxd3vin/env.git
 cd env
 ./setup-system.sh
 ./setup-user.sh

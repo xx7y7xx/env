@@ -1,8 +1,10 @@
 [core]
   quotepath = false
-  # Almost all developers are using M$ in yonyou.com,
-  # make sure CRLF is using under working directory.
-  autocrlf = true
+  # Almost all developers are using M$ in yonyou.com.
+  # Make sure CRLF is using under working directory.
+  # Change default config per project.
+  # $ git clone --config core.autocrlf=true --branch develop git@git.yonyou.com:sscplatform/ssc_webcomp.git
+  #autocrlf = true
   editor = vim
 
 [user]

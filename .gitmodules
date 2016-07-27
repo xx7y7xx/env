@@ -1,3 +1,18 @@
 [submodule ".vim/bundle/vim-node"]
 	path = .vim/bundle/vim-node
 	url = https://github.com/moll/vim-node.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/delimitMate"]
+	path = .vim/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule ".vim/bundle/command-t"]
+	path = .vim/bundle/command-t
+	url = https://github.com/wincent/command-t.git
+[submodule ".vim/bundle/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/bundle/vim-javascript-syntax"]
+	path = .vim/bundle/vim-javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
