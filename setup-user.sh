@@ -30,6 +30,10 @@ ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
 # node
 ln -s /home/chenyang/env/.npmrc /home/chenyang/.npmrc
 
+# filezilla
+mkdir -p ~/.config
+ln -s ~/env/.config/filezilla ~/.config/filezilla
+
 # VirtualBox
 ln -s /home/chenyang/env/.VirtualBox /home/chenyang/.VirtualBox
 
