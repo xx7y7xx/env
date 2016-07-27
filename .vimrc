@@ -1,3 +1,14 @@
+" To disable a plugin, add it's bundle name to the following list
+let g:pathogen_disabled = []
+"call add(g:pathogen_disabled, 'delimitMate')
+call add(g:pathogen_disabled, 'vim-javascript')
+
+" config-pathogen-start
+execute pathogen#infect()
+filetype plugin indent on
+syntax on
+" config-pathogen-end
+
 set smartindent
 
 " Set autoindent according to file type.

@@ -19,6 +19,18 @@ ln -s /home/chenyang/env/ssh_config /home/chenyang/.ssh/config
 
 # vim 
 ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
+ln -s ~/env/.vim ~/.vim
+#~/.vim/autoload/
+#~/.vim/autoload/pathogen.vim
+#wget https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+#~/.vim/bundle/
+#git clone --config core.autocrlf=false https://github.com/moll/vim-node.git 
+#git clone --config core.autocrlf=false https://github.com/scrooloose/nerdtree.git
+#git clone --config core.autocrlf=false https://github.com/Raimondi/delimitMate.git
+#git clone --config core.autocrlf=false https://github.com/wincent/command-t.git
+#git clone --config core.autocrlf=false https://github.com/pangloss/vim-javascript.git
+#git clone --config core.autocrlf=false https://github.com/jelera/vim-javascript-syntax.git
+#~/.vim/bundle/delimitMate
 
 # bin
 ln -s /home/chenyang/env/bin /home/chenyang/bin
