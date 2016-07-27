@@ -14,8 +14,12 @@ sudo ls
 
 # 1. MUST INSTALL tools and base system.
 
-sudo apt-get install -y git vim subversion curl sshfs
-sudo apt-get install -y openssh-server
+sudo apt-get install -y vim vim-gtk
+sudo apt-get install -y git subversion curl
+sudo apt-get install -y openssh-server sshfs
+# GUI software
+sudo apt-get install -y nautilus-open-terminal
+sudo apt-get install -y filezilla gimp meld
 
 # hudson slave needs java runtime env
 # apache sling need java runtime env (java7 may not work)
@@ -31,8 +35,8 @@ sudo apt-get install -y x11vnc
 # other common tools
 sudo apt-get install -y multitail p7zip davfs2 gnuplot
 # other common software
-sudo apt-get install -y nautilus-open-terminal xzoom
-sudo apt-get install -y vim-gnome filezilla gimp shutter virtualbox meld
+sudo apt-get install -y xzoom
+sudo apt-get install -y shutter virtualbox
 # render/image
 sudo apt-get install -y luminance-hdr imagemagick
 

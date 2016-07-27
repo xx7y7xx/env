@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vim-javascript-syntax"]
 	path = .vim/bundle/vim-javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule ".vim/bundle/vim-markdown-jekyll"]
+	path = .vim/bundle/vim-markdown-jekyll
+	url = https://github.com/PProvost/vim-markdown-jekyll.git
