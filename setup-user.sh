@@ -15,7 +15,7 @@
 
 # ssh client
 mkdir -p ~/.ssh && chmod 700 ~/.ssh
-ln -s /home/chenyang/env/ssh_config /home/chenyang/.ssh/config
+ln -s ~/env/ssh_config ~/.ssh/config
 
 # vim 
 ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
@@ -31,11 +31,39 @@ ln -s ~/env/.vim ~/.vim
 #git submodule add https://github.com/pangloss/vim-javascript.git
 #git submodule add https://github.com/jelera/vim-javascript-syntax.git
 #git submodule add https://github.com/mileszs/ack.vim.git
+#git submodule add https://github.com/PProvost/vim-markdown-jekyll.git
+# remove git submodule
+#
+# ```
+# $ git reset HEAD .gitmodules vim-markdown
+# ```
+#
+# remove these lines in `.gitmodules`
+#
+# ```
+# [submodule ".vim/bundle/vim-markdown"]
+#   path = .vim/bundle/vim-markdown
+#   url = https://github.com/hallison/vim-markdown.git
+# ```
+#
+# remove submodule dir
+#
+# ```
+# rm -rf vim-markdown
+# ```
+#
+# remove config in `.git` of repo dir
+#
+# ```
+# rm -rf .git/modules/.vim/bundle/vim-markdown
+# ```
+#
+#vim :Helptags
 
 #~/.vim/bundle/delimitMate
 
 # bin
-ln -s /home/chenyang/env/bin /home/chenyang/bin
+ln -s ~/env/bin ~/bin
 
 # git config
 ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
@@ -121,11 +149,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/o
 
 # program profile
 # .remmina
-# .filezilla
 # .mozilla
 # .shutter
 # .subversion
-# .vim
 # .thunderbird
 # .gimp-2.8
 # .config/google-chrome
