@@ -30,6 +30,7 @@ ln -s ~/env/.vim ~/.vim
 #git submodule add https://github.com/wincent/command-t.git
 #git submodule add https://github.com/pangloss/vim-javascript.git
 #git submodule add https://github.com/jelera/vim-javascript-syntax.git
+#git submodule add https://github.com/mileszs/ack.vim.git
 
 #~/.vim/bundle/delimitMate
 
