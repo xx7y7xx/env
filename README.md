@@ -16,6 +16,20 @@ cd env
 ./setup-user.sh
 ```
 
+## feature
+
+- vim plugins
+  - vim-node
+  - ack
+- `git meld` alias
+
 ## note
 
 turn `core.autocrlf` off, otherwise Git will convert `LF` in `.vimrc` to `CRLF`, and cause error when run Vim.
+
+## third party tools
+
+- `.vim/bundle/*` vim plugins
+- `vendor/*`
+
+TODO: how to update trd party tools.

@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-markdown-jekyll"]
 	path = .vim/bundle/vim-markdown-jekyll
 	url = https://github.com/PProvost/vim-markdown-jekyll.git
+[submodule "vendor/git-meld"]
+	path = vendor/git-meld
+	url = https://github.com/wmanley/git-meld.git

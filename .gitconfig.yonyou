@@ -21,3 +21,6 @@
 # diff.py := ~/bin/diff.py
 [diff]
   external = diff.py
+
+[alias]
+  meld = !/home/chenyang/env/vendor/git-meld/git-meld.pl
