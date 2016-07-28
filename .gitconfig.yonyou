@@ -1,3 +1,6 @@
+# Sample of git config file
+#https://gist.github.com/pksunkara/988716
+
 [core]
   quotepath = false
   # Almost all developers are using M$ in yonyou.com.
@@ -14,5 +17,7 @@
 [push]
   default = simple
 
-# Sample of git config file
-#https://gist.github.com/pksunkara/988716
+# Replace default diff tool with meld
+# diff.py := ~/bin/diff.py
+[diff]
+  external = diff.py
