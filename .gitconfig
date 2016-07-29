@@ -1,5 +1,9 @@
+# Sample of git config file
+#https://gist.github.com/pksunkara/988716
+
 [core]
   quotepath = false
+  # The defualt value of `autocrlf` is false, means not auto convert eol.
   #autocrlf = false
   editor = vim
 
@@ -10,5 +14,10 @@
 [push]
   default = simple
 
-# Sample of git config file
-#https://gist.github.com/pksunkara/988716
+# Replace default diff tool with meld
+# ~/bin/diff.py
+[diff]
+  external = diff.py
+
+[alias]
+  meld = !/home/chenyang/env/vendor/git-meld/git-meld.pl

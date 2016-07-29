@@ -16,6 +16,13 @@ cd env
 ./setup-user.sh
 ```
 
+## update
+
+```
+git submodule update --init 
+git submodule foreach git pull origin master
+```
+
 ## feature
 
 - vim plugins

@@ -3,11 +3,12 @@
 
 [core]
   quotepath = false
-  # Almost all developers are using M$ in yonyou.com.
+  # The defualt value of `autocrlf` is false, means not auto convert eol.
+  # But almost all developers are using M$ in yonyou.com.
   # Make sure CRLF is using under working directory.
   # Change default config per project.
   # $ git clone --config core.autocrlf=true --branch develop git@git.yonyou.com:sscplatform/ssc_webcomp.git
-  #autocrlf = true
+  #autocrlf = false
   editor = vim
 
 [user]
@@ -18,7 +19,7 @@
   default = simple
 
 # Replace default diff tool with meld
-# diff.py := ~/bin/diff.py
+# ~/bin/diff.py
 [diff]
   external = diff.py
 
