@@ -72,6 +72,12 @@ ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
 # node
 ln -s /home/chenyang/env/.npmrc /home/chenyang/.npmrc
 
+#
+# software config files/dir
+#
+
+ln -s ~/env/.shutter ~/.shutter
+
 # filezilla
 mkdir -p ~/.config
 ln -s ~/env/.config/filezilla ~/.config/filezilla
@@ -143,9 +149,13 @@ mkdir -p /home/chenyang/opt/hudsonslave
 
 # gnome keyboard shortcut ( MUST BE TEST !! )
 # gconftool-2 --set  new schema org.gnome.settings-daemon.plugins.media-keys.custom-keybinding
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Shutter"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "shutter -f"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "Print"
+# failed in ubuntu 16.04:
+# ```
+# No such schema 'org.gnome.settings-daemon.plugins.media-keys.custom-keybindings'
+# ```
+#gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name "Shutter"
+#gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command "shutter -f"
+#gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindings:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding "Print"
 
 # program profile
 # .remmina
