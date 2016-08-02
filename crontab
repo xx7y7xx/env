@@ -3,6 +3,6 @@
 # check uncommit git changes
 0 *    * * *   /home/chenyang/bin/check-git.sh
 # check uncommit git changes
-* *    * * *   /home/chenyang/bin/check-xuanran001.sh
+#* *    * * *   /home/chenyang/bin/check-xuanran001.sh
 # reboot router
-0 *    * * *   /home/chenyang/bin/rebootrouter.sh
+#0 *    * * *   /home/chenyang/bin/rebootrouter.sh

@@ -37,8 +37,16 @@ function check2()
 }
 
 check1 "/home/chenyang/env"
-check1 "/home/chenyang/workspace"
-check2 "performance"
+#check1 "/home/chenyang/workspace"
+#check2 "performance"
 check2 "xxd3vin.github.io"
-check2 "xuanran001-infrastructure"
-check1 "/home/chenyang/wware/server"
+#check2 "xuanran001-infrastructure"
+#check1 "/home/chenyang/wware/server"
+
+## ssc
+
+check2 "ssc_webcomp"
+check2 "ssc_webdoc"
+check2 "ssc_ocr"
+check2 "yyssc.github.io"
+check2 "tims-ocr-api"
