@@ -12,8 +12,8 @@
   editor = vim
 
 [user]
-  email = chenyangf@yonyou.com
-  name = chenyangf
+  email = d3vin.chen@gmail.com
+  name = Devin Chen
 
 [push]
   default = simple
