@@ -15,6 +15,9 @@ set smartindent
 if (&ft == 'php' || &ft == 'html')
     set tabstop=2
     set shiftwidth=2
+elseif (&ft == 'js')
+    set tabstop=2
+    set shiftwidth=2
 else
     set tabstop=2
     set shiftwidth=2
