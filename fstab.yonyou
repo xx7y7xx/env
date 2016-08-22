@@ -5,4 +5,6 @@
 #
 
 //20.1.75.41/nc65gold0331 /home/chenyang/Mount/nc65gold0331 cifs ro,username=administrator,password=yonyou.com1988,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
+//20.10.80.94/d /home/chenyang/Mount/20.10.80.94_d cifs ro,username=administrator,password=uf*00000,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
+//20.1.75.41/d /home/chenyang/Mount/20.1.75.41_d cifs ro,username=administrator,password=yonyou.com1988,file_mode=0777,dir_mode=0777,uid=chenyang,gid=chenyang        0 0
 
