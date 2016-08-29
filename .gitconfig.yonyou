@@ -25,3 +25,6 @@
 
 [alias]
   meld = !/home/chenyang/env/vendor/git-meld/git-meld.pl
+	co = checkout
+  ci = commit
+  br = branch
