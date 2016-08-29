@@ -36,3 +36,7 @@ set colorcolumn=81
 au BufRead,BufNewFile *.esp setfiletype javascript
 au BufRead,BufNewFile *.module setfiletype php
 au BufRead,BufNewFile *.html setfiletype php
+
+" Auto-open NERDTree in “EVERY” tab
+autocmd VimEnter * NERDTree
+autocmd BufWinEnter * NERDTreeMirror
