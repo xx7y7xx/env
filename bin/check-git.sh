@@ -1,15 +1,10 @@
 #!/bin/bash
 
-function noty()
-{
-  export DISPLAY=:0.0 && export XAUTHORITY=/home/chenyang/.Xauthority && /usr/bin/notify-send "$1" "$2" -i ~/Downloads/swiper-autoplay.png
-}
-
 function check()
 {
   repo_path="`pwd`"
   files="`git ls-files --other --directory --exclude-standard`"
-  git ls-files --other --directory --exclude-standard | sed q1 || noty "Uncommit changes in Git" "Dir:\n`pwd`\n \nFile list:\n$files\n"
+  git ls-files --other --directory --exclude-standard | sed q1 || notify-send.sh "Uncommit changes in Git" "Dir:\n$repo_path\n \nFile list:\n$files\n"
 
   LOCAL=$(git rev-parse @)
   REMOTE=$(git rev-parse @{u})
@@ -18,13 +13,12 @@ function check()
   if [ $LOCAL = $REMOTE ]; then
     echo "Up-to-date" &> /dev/null
   elif [ $LOCAL = $BASE ]; then
-    noty "Need to pull: $repo_path"
+    notify-send.sh "Need to pull: $repo_path"
   elif [ $REMOTE = $BASE ]; then
-    noty "Need to push: $repo_path"
+    notify-send.sh "Need to push: $repo_path"
   else
-    noty "Diverged: $repo_path"
+    notify-send.sh "Diverged: $repo_path"
   fi
-
 }
 
 function check1()
