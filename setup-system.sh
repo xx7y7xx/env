@@ -33,7 +33,7 @@ sudo /tmp/java.sh
 # other base system.
 sudo apt-get install -y x11vnc
 # other common tools
-sudo apt-get install -y multitail p7zip davfs2 gnuplot
+sudo apt-get install -y multitail p7zip davfs2 gnuplot unrar
 # other common software
 sudo apt-get install -y xzoom
 sudo apt-get install -y shutter virtualbox
