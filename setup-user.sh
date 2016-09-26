@@ -69,9 +69,6 @@ ln -s ~/env/bin ~/bin
 ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig
 #ln -s /home/chenyang/env/.gitconfig /home/chenyang/.gitconfig.yonyou
 
-# node
-ln -s /home/chenyang/env/.npmrc /home/chenyang/.npmrc
-
 #
 # software config files/dir
 #
