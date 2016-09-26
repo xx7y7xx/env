@@ -3,3 +3,4 @@
 .*.swp
 bin/*.osl
 .VirtualBox/*.iso
+.shutter/session.xml
