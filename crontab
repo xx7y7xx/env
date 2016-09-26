@@ -6,3 +6,8 @@
 #* *    * * *   /home/chenyang/bin/check-xuanran001.sh
 # reboot router
 #0 *    * * *   /home/chenyang/bin/rebootrouter.sh
+## pull ssc_webpf repo
+* *    * * *   /home/chenyang/bin/check-ssc_webpf.sh >> /tmp/check-ssc_webpf.log 2>&1
+
+## CI
+0 1    * * *   /home/chenyang/bin/deploy_ssc_web.sh >> /tmp/deploy_ssc_web.log 2>&1
