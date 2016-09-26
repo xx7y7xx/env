@@ -38,5 +38,5 @@ au BufRead,BufNewFile *.module setfiletype php
 au BufRead,BufNewFile *.html setfiletype php
 
 " Auto-open NERDTree in “EVERY” tab
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
 autocmd BufWinEnter * NERDTreeMirror
