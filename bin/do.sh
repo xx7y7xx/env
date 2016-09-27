@@ -16,4 +16,4 @@ esac
 
 echo $ip
 
-autossh root@$ip #-D 0.0.0.0:9998
+autossh -vvv root@$ip #-D 0.0.0.0:9998
