@@ -39,4 +39,10 @@ turn `core.autocrlf` off, otherwise Git will convert `LF` in `.vimrc` to `CRLF`,
 - `.vim/bundle/*` vim plugins
 - `vendor/*`
 
+## Install new vim plugin
+
+```
+git submodule add https://github.com/moll/vim-node.git
+```
+
 TODO: how to update trd party tools.
