@@ -37,6 +37,10 @@ au BufRead,BufNewFile *.esp setfiletype javascript
 au BufRead,BufNewFile *.module setfiletype php
 au BufRead,BufNewFile *.html setfiletype php
 
+" Highlight current line
+:set cursorline
+":hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+
 "===============================================================================
 " The NERD Tree
 " https://github.com/scrooloose/nerdtree
