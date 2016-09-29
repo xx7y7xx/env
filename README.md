@@ -49,6 +49,7 @@ turn `core.autocrlf` off, otherwise Git will convert `LF` in `.vimrc` to `CRLF`,
 ## Install new vim plugin
 
 ```
+cd .vim/bundle/
 git submodule add https://github.com/moll/vim-node.git
 ```
 
