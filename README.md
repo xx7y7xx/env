@@ -26,8 +26,15 @@ git submodule foreach git pull origin master
 ## feature
 
 - vim plugins
+  - ack.vim
+  - command-t
+  - delimitMate
+  - neocomplete.vim - Auto complete
+  - nerdtree - Tree view file explorer
+  - vim-javascript
+  - vim-javascript-syntax
+  - vim-markdown-jekyll
   - vim-node
-  - ack
 - `git meld` alias
 
 ## note
