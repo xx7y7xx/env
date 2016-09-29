@@ -133,3 +133,11 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " Automatically displays all buffers when there's only one tab open.
 let g:airline#extensions#tabline#enabled = 1
+
+"===============================================================================
+" Indent Guides
+" https://github.com/nathanaelkane/vim-indent-guides
+"===============================================================================
+
+" Use this option to control whether the plugin is enabled on Vim startup.
+let g:indent_guides_enable_on_vim_startup = 1
