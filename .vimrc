@@ -37,9 +37,17 @@ au BufRead,BufNewFile *.esp setfiletype javascript
 au BufRead,BufNewFile *.module setfiletype php
 au BufRead,BufNewFile *.html setfiletype php
 
+"===============================================================================
+" The NERD Tree
+" https://github.com/scrooloose/nerdtree
+"===============================================================================
+
 " Auto-open NERDTree in “EVERY” tab
 "autocmd VimEnter * NERDTree
 autocmd BufWinEnter * NERDTreeMirror
+
+" Toggle NERDTree with Ctrl+n
+map <C-n> :NERDTreeToggle<CR>
 
 "===============================================================================
 " neocomplete plugin setting
@@ -117,3 +125,11 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+"===============================================================================
+" vim-airline
+" https://github.com/vim-airline/vim-airline
+"===============================================================================
+
+" Automatically displays all buffers when there's only one tab open.
+let g:airline#extensions#tabline#enabled = 1
