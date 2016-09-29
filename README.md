@@ -29,7 +29,7 @@ git submodule foreach git pull origin master
   - ack.vim
   - command-t
   - delimitMate
-  - neocomplete.vim - Auto complete
+  - [neocomplete.vim](https://github.com/Shougo/neocomplete.vim) - Auto complete
   - nerdtree - Tree view file explorer
   - vim-javascript
   - vim-javascript-syntax
