@@ -68,4 +68,17 @@ cd .vim/bundle/
 git submodule add https://github.com/moll/vim-node.git
 ```
 
+## Remove vim plugin
+
+```
+vim .gitmodules # remove neocomplete section
+git add .gitmodules
+vim .git/config # remove neocomplete section
+git rm --cached .vim/bundle/neocomplete.vim
+rm -rf .git/modules/.vim/bundle/neocomplete.vim
+git commit -m "remove neocomplete for youcompleteme"
+rm -rf .vim/bundle/neocomplete.vim
+git push
+```
+
 TODO: how to update trd party tools.
