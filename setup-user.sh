@@ -19,7 +19,11 @@ ln -s ~/env/ssh_config ~/.ssh/config
 
 # vim 
 ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
+
+# vim config/plugin dir
+# Method 1: Use config/plugin in this repo
 ln -s ~/env/.vim ~/.vim
+# Method 2: Download plugins manually
 #~/.vim/autoload/
 #~/.vim/autoload/pathogen.vim
 #wget https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
@@ -32,6 +36,7 @@ ln -s ~/env/.vim ~/.vim
 #git submodule add https://github.com/jelera/vim-javascript-syntax.git
 #git submodule add https://github.com/mileszs/ack.vim.git
 #git submodule add https://github.com/PProvost/vim-markdown-jekyll.git
+
 # remove git submodule
 #
 # ```
