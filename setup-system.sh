@@ -41,8 +41,10 @@ sudo apt-get install -y shutter virtualbox
 sudo apt-get install -y luminance-hdr imagemagick
 
 # nodejs
-sudo apt-get install -y nodejs npm
-sudo ln -s /usr/bin/nodejs /usr/bin/node
+# a better way to install nodejs - http://xxd3vin.github.io/nodejs
+#sudo apt-get install -y nodejs npm
+#sudo ln -s /usr/bin/nodejs /usr/bin/node
+
 # nodejs weinre
 sudo npm -g install weinre
 
