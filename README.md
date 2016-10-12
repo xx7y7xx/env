@@ -16,6 +16,15 @@ cd env
 ./setup-user.sh
 ```
 
+For windows
+
+```
+cd $HOME
+git clone --recursive git@github.com:xxd3vin/env.git
+ln -s -v env/.vim vimfiles
+ln -s -v env/.vimrc .vimrc
+```
+
 ## update
 
 ```
