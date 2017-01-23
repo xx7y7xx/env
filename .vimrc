@@ -25,10 +25,14 @@ endif
 
 set expandtab
 
+" Enable hightlight searching
 set hls
 
 " 80 Column mode
 set colorcolumn=81
+
+" Show line number
+set number
 
 "
 " custom syntax hightlight
