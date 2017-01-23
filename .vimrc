@@ -34,6 +34,10 @@ set colorcolumn=81
 " Show line number
 set number
 
+" The Vim editor will start searching when you type the first character of the
+" search string
+set incsearch
+
 "
 " custom syntax hightlight
 "
