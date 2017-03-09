@@ -90,4 +90,16 @@ rm -rf .vim/bundle/neocomplete.vim
 git push
 ```
 
-TODO: how to update trd party tools.
+## Update trd party tools.
+
+```
+cd .vim/bundle/nerdtree
+git pull
+cd -
+git add .vim/bundle/nerdtree
+git commit
+```
+
+## References
+
+- https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
