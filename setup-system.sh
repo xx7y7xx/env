@@ -16,6 +16,7 @@ sudo ls
 
 sudo apt-get install -y vim vim-gtk
 sudo apt-get install -y git subversion curl
+sudo apt-get install -y ack-grep
 sudo apt-get install -y openssh-server sshfs
 # GUI software
 sudo apt-get install -y nautilus-open-terminal
