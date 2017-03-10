@@ -21,6 +21,8 @@ sudo apt-get install -y openssh-server sshfs
 # GUI software
 sudo apt-get install -y nautilus-open-terminal
 sudo apt-get install -y filezilla gimp meld
+# 辅助~/bin中的脚本，比如yy-servers.sh
+sudo apt-get install -y dialog
 
 # hudson slave needs java runtime env
 # apache sling need java runtime env (java7 may not work)
