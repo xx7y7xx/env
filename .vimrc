@@ -66,6 +66,21 @@ map <C-n> :NERDTreeToggle<CR>
 set mouse=a
 let g:NERDTreeMouseMode=2
 
+" Open file in a new tab when clicking twice
+" https://github.com/scrooloose/nerdtree/issues/323#issuecomment-266419487
+fun! s:MyNERDTreeSetting()
+  fun! s:DoubleClickBehavior()
+    if match(getline('.'), '▸') == -1 && match(getline('.'), '▾') == -1
+      map <buffer> <2-LeftMouse> t
+    else
+      map <buffer> <2-LeftMouse> o
+    endif
+  endfun
+
+  autocmd CursorMoved * call s:DoubleClickBehavior()
+endfun
+autocmd WinEnter * if &ft == 'nerdtree' | call s:MyNERDTreeSetting() | endif
+
 "===============================================================================
 " Plugin: vim-airline
 " https://github.com/vim-airline/vim-airline
