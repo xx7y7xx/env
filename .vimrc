@@ -61,6 +61,11 @@ autocmd BufWinEnter * NERDTreeMirror
 " Toggle NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
+" Single click to open directory nodes with single click
+" Double click to open file nodes
+set mouse=a
+let g:NERDTreeMouseMode=2
+
 "===============================================================================
 " Plugin: vim-airline
 " https://github.com/vim-airline/vim-airline
