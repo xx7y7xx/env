@@ -13,11 +13,22 @@
 #export SVN_EDITOR=vim
 ## d3vin-end
 
+# bash
+ln -s ~/env/.bash ~/.bash
+
+# Git Aware Prompt for Bash
+# cat ~/.bashrc
+## added by chenyang, Git Aware Prompt
+#export GITAWAREPROMPT=~/.bash/git-aware-prompt
+#source "${GITAWAREPROMPT}/main.sh"
+#export PS1="\${debian_chroot:+(\$debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
+# cat-end
+
 # ssh client
 mkdir -p ~/.ssh && chmod 700 ~/.ssh
 ln -s ~/env/ssh_config ~/.ssh/config
 
-# vim 
+# vim
 ln -s /home/chenyang/env/.vimrc /home/chenyang/.vimrc
 
 # vim config/plugin dir

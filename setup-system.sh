@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GLUEIP="192.168.1.153"                                                           
+GLUEIP="192.168.1.153"
 SVNOPT=" --username=ci --password=sp12345678 --no-auth-cache --non-interactive --force "
 TOOLS_URL="http://www.xuanran001.com/public/tools"
 
@@ -21,7 +21,7 @@ sudo apt-get install -y openssh-server sshfs
 # GUI software
 sudo apt-get install -y nautilus-open-terminal
 sudo apt-get install -y filezilla gimp meld
-# 辅助~/bin中的脚本，比如yy-servers.sh
+# 辅助~/bin中的脚本，比如yy-servers.sh，生成GUI菜单
 sudo apt-get install -y dialog
 
 # hudson slave needs java runtime env

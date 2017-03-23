@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/tern_for_vim"]
 	path = .vim/bundle/tern_for_vim
 	url = https://github.com/ternjs/tern_for_vim.git
+[submodule ".bash/git-aware-prompt"]
+	path = .bash/git-aware-prompt
+	url = https://github.com/jimeh/git-aware-prompt.git

@@ -25,7 +25,16 @@ ln -s -v env/.vim vimfiles
 ln -s -v env/.vimrc .vimrc
 ```
 
-## update
+## install submodule
+
+```
+cd .vim/bundle/
+git submodule add https://github.com/moll/vim-node.git
+cd .bash/
+git submodule add https://github.com/jimeh/git-aware-prompt.git
+```
+
+## update submodule
 
 ```
 git submodule update --init
