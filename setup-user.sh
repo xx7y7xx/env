@@ -78,6 +78,9 @@ ln -s ~/env/.vim ~/.vim
 
 #~/.vim/bundle/delimitMate
 
+# atom
+ln -s ~/env/.atom/config.cson ~/.atom/config.cson
+
 # bin
 ln -s ~/env/bin ~/bin
 

@@ -1,0 +1,21 @@
+"*":
+  core:
+    disabledPackages: [
+      "minimap-highlight-selected"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showInvisibles: true
+    tabType: "soft"
+  "git-plus":
+    general:
+      _analyticsUserId: "bbd84402-e988-42f8-a045-70256a54d351"
+  welcome:
+    showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
