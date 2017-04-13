@@ -14,10 +14,13 @@ sudo ls
 
 # 1. MUST INSTALL tools and base system.
 
-sudo apt-get install -y vim vim-gtk
-sudo apt-get install -y git subversion curl
-sudo apt-get install -y ack-grep
-sudo apt-get install -y openssh-server sshfs
+sudo apt-get install -y vim vim-gtk # editor
+sudo apt-get install -y git subversion # version control
+sudo apt-get install -y curl # network tool
+sudo apt-get install -y ack-grep # search tool
+sudo apt-get install -y trash-cli # trash file in command line, replace rm
+sudo apt-get install -y openssh-server sshfs # ssh related tools
+sudo apt-get install -y inotify-tools # io tools
 # GUI software
 sudo apt-get install -y nautilus-open-terminal
 sudo apt-get install -y filezilla gimp meld
