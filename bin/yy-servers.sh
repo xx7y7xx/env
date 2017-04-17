@@ -80,4 +80,4 @@ if [ -z $ip ]; then
 fi
 
 echo "正在连接到服务器..."
-ssh $USER@$ip -p $PORT -vvv
+ssh $USER@$ip -p $PORT
