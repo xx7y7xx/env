@@ -20,6 +20,11 @@ CLUSTER_NODE_239=10.3.14.239
 CLUSTER_NODE_240=10.3.14.240
 CLUSTER_NODE_241=10.3.14.241
 
+# 用友云
+#YY_CLOUD_219=172.20.4.219
+YY_CLOUD_222=172.20.4.222
+#YY_CLOUD_224=172.20.4.224
+
 # Dialog config
 HEIGHT=20
 WIDTH=50
@@ -35,6 +40,7 @@ OPTIONS=(1 "前后端联调服务器 172.20.4.88:8088"
          6 "集群节点 10.3.14.239"
          7 "集群节点 10.3.14.240"
          8 "集群节点 10.3.14.241"
+         9 "用友云节点 172.20.4.222 用于前端集成联调"
 )
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -71,6 +77,9 @@ case $CHOICE in
             ;;
         8)
             ip=$CLUSTER_NODE_241
+            ;;
+        9)
+            ip=$YY_CLOUD_222
             ;;
 esac
 
