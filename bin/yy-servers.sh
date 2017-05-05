@@ -4,7 +4,7 @@
 
 # SSH config
 PORT=22
-USER=root
+user=root # default login user
 
 # Server IP
 
@@ -80,6 +80,7 @@ case $CHOICE in
             ;;
         9)
             ip=$YY_CLOUD_222
+            user=chenyang
             ;;
 esac
 
@@ -89,4 +90,4 @@ if [ -z $ip ]; then
 fi
 
 echo "正在连接到服务器..."
-ssh $USER@$ip -p $PORT
+ssh $user@$ip -p $PORT
