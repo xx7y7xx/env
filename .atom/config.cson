@@ -1,7 +1,9 @@
 "*":
   core:
     disabledPackages: [
-      "minimap-highlight-selected"
+      "goto-definition"
+      "jump-to-import"
+      "symbol-gen"
     ]
     excludeVcsIgnoredPaths: true
     ignoredNames: [
@@ -15,23 +17,30 @@
       "node_modules"
       "dist"
       "coverage"
+      ".happypack"
     ]
     telemetryConsent: "limited"
     themes: [
-      "atom-dark-ui"
+      "seti-ui"
       "atom-dark-syntax"
     ]
   editor:
     invisibles: {}
     showInvisibles: true
+    tabLength: 4
     tabType: "soft"
   "git-plus":
     general:
       _analyticsUserId: "bbd84402-e988-42f8-a045-70256a54d351"
   "linter-eslint":
     fixOnSave: true
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "seti-ui":
+    compactView: true
   welcome:
     showOnStartup: false
   whitespace:
