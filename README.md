@@ -1,7 +1,7 @@
 dev
 ===
 
-## Zero installation
+## Installation
 
 1. Prepare private key.
 
@@ -25,23 +25,59 @@ ln -s -v env/.vim vimfiles
 ln -s -v env/.vimrc .vimrc
 ```
 
-## install submodule
+## Maintaninance
+
+### Install new vim plugin
 
 ```
 cd .vim/bundle/
 git submodule add https://github.com/moll/vim-node.git
+```
+
+`.gitmodules` and `.vim/bundle/vim-node` will add to git index, then
+
+```
+git commit ...
+```
+
+### Install bash plugins
+
+```
 cd .bash/
 git submodule add https://github.com/jimeh/git-aware-prompt.git
 ```
 
-## update submodule
+### Update trd party tools.
+
+```
+cd .vim/bundle/nerdtree
+git pull
+cd -
+git add .vim/bundle/nerdtree
+git commit
+```
+
+### update submodule
 
 ```
 git submodule update --init
 git submodule foreach git pull origin master
 ```
 
-## feature
+### Remove vim plugin
+
+```
+vim .gitmodules # remove neocomplete section
+git add .gitmodules
+vim .git/config # remove neocomplete section
+git rm --cached .vim/bundle/neocomplete.vim
+rm -rf .git/modules/.vim/bundle/neocomplete.vim
+git commit -m "remove neocomplete for youcompleteme"
+rm -rf .vim/bundle/neocomplete.vim
+git push
+```
+
+## Features
 
 ### Vim plugins
 
@@ -50,6 +86,7 @@ git submodule foreach git pull origin master
 - delimitMate
 - [neocomplete.vim](https://github.com/Shougo/neocomplete.vim) - Auto complete
 - nerdtree - Tree view file explorer
+  - [nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
 - tern_for_vim - Provides Tern-based JavaScript editing support.
 - vim-javascript
 - vim-javascript-syntax
@@ -58,7 +95,7 @@ git submodule foreach git pull origin master
 
 #### tern for vim
 
-Aftter `git submodule add`, you will `cd bundle/tern_for_vim; npm install` to
+After `git submodule add`, you will `cd bundle/tern_for_vim; npm install` to
 install a tern server.
 
 And provide a config file `.tern-config` in root dir of your project.
@@ -74,40 +111,11 @@ You may providde a config file `.tern-config` for all projects, and
 
 turn `core.autocrlf` off, otherwise Git will convert `LF` in `.vimrc` to `CRLF`, and cause error when run Vim.
 
-## third party tools
+## Dir structure
 
-- `.vim/bundle/*` vim plugins
-- `vendor/*`
-
-## Install new vim plugin
-
-```
-cd .vim/bundle/
-git submodule add https://github.com/moll/vim-node.git
-```
-
-## Remove vim plugin
-
-```
-vim .gitmodules # remove neocomplete section
-git add .gitmodules
-vim .git/config # remove neocomplete section
-git rm --cached .vim/bundle/neocomplete.vim
-rm -rf .git/modules/.vim/bundle/neocomplete.vim
-git commit -m "remove neocomplete for youcompleteme"
-rm -rf .vim/bundle/neocomplete.vim
-git push
-```
-
-## Update trd party tools.
-
-```
-cd .vim/bundle/nerdtree
-git pull
-cd -
-git add .vim/bundle/nerdtree
-git commit
-```
+- third party tools
+  - `.vim/bundle/*` vim plugins
+  - `vendor/*`
 
 ## References
 
