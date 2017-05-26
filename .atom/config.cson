@@ -22,13 +22,14 @@
     telemetryConsent: "limited"
     themes: [
       "seti-ui"
-      "atom-dark-syntax"
+      "seti-syntax"
     ]
   editor:
     invisibles: {}
     showInvisibles: true
-    tabLength: 4
     tabType: "soft"
+  "exception-reporting":
+    userId: "ed9a7f52-7fda-4d39-bcb0-e4f7bbdccc8c"
   "git-plus":
     general:
       _analyticsUserId: "bbd84402-e988-42f8-a045-70256a54d351"
