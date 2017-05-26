@@ -92,6 +92,7 @@ git push
 - vim-javascript-syntax
 - vim-markdown-jekyll
 - vim-node
+- [vim-jsx](https://github.com/mxw/vim-jsx)
 
 #### tern for vim
 
