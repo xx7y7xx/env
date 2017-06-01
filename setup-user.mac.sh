@@ -11,6 +11,8 @@
 #export PATH
 ## use vim to write svn commit log
 #export SVN_EDITOR=vim
+## command alias
+#alias ll='ls -lG'
 ## d3vin-end
 
 # bin
