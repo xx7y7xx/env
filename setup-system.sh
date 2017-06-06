@@ -47,6 +47,8 @@ sudo apt-get install -y xzoom
 sudo apt-get install -y shutter virtualbox
 # render/image
 sudo apt-get install -y luminance-hdr imagemagick
+# offline doc viewer
+# https://zealdocs.org/download.html#linux-ubuntu
 
 # nodejs
 # a better way to install nodejs - http://xxd3vin.github.io/nodejs
