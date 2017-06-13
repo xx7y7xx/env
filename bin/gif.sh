@@ -8,17 +8,25 @@
 # sudo apt-get install byzanz -y
 # ```
 
-d=`date +"%Y-%m-%dT%T"`
-f="/home/chenyang/Pictures/${d}.gif"
+current_time=`date +"%Y-%m-%dT%T"`
+output_file="/home/chenyang/Pictures/${current_time}.gif"
 byzanz="byzanz-record"
 
 if ! type "$byzanz" > /dev/null; then
   echo "ERROR: $byzanz not found!"
+  notify-send.sh "byzanz-record" "ERROR: $byzanz not found!"
   exit 1
 fi
 
-sleep 0.5
-#byzanz-record --duration=5 --x=200 --y=300 --width=700 --height=400 $f
-byzanz-record --duration=5 --x=0 --y=0 --width=1440 --height=900 $f
+# GIF duration
+if [ -z "$1" ]; then
+  duration=5
+else
+  duration=$1
+fi 
 
-notify-send.sh "byzanz-record" "Job finished."
+sleep 0.5
+#byzanz-record --duration=$duration --x=200 --y=300 --width=700 --height=400 $output_file
+byzanz-record --duration=$duration --x=0 --y=0 --width=1440 --height=900 $output_file
+
+notify-send.sh "byzanz-record" "GIF job finished."
