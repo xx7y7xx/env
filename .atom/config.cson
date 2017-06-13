@@ -35,7 +35,9 @@
       _analyticsUserId: "bbd84402-e988-42f8-a045-70256a54d351"
   "linter-eslint":
     fixOnSave: true
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 100
+    showPanel: true
   minimap:
     plugins:
       "highlight-selected": true
