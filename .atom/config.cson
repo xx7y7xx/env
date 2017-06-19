@@ -4,6 +4,7 @@
       "goto-definition"
       "jump-to-import"
       "symbol-gen"
+      "whitespace"
     ]
     excludeVcsIgnoredPaths: true
     ignoredNames: [
@@ -27,7 +28,6 @@
   editor:
     invisibles: {}
     showInvisibles: true
-    tabType: "soft"
   "exception-reporting":
     userId: "ed9a7f52-7fda-4d39-bcb0-e4f7bbdccc8c"
   "git-plus":
@@ -48,3 +48,6 @@
     showOnStartup: false
   whitespace:
     removeTrailingWhitespace: false
+".editorconfig.source":
+  editor:
+    showIndentGuide: true
