@@ -8,6 +8,9 @@ user=root # default login user
 
 # Server IP
 
+# 说明
+# 10.3.14.* 都是阿里云的服务器
+
 # 前后端联调
 TESTING_SERVER=172.20.4.88
 # 后端开发
@@ -19,6 +22,9 @@ CLUSTER_NODE_238=10.3.14.238
 CLUSTER_NODE_239=10.3.14.239
 CLUSTER_NODE_240=10.3.14.240
 CLUSTER_NODE_241=10.3.14.241
+
+# 友报表测试环境
+YBB_NODE_2=10.3.14.2
 
 # 用友云
 YY_CLOUD_219=172.20.4.219
@@ -45,6 +51,7 @@ OPTIONS=(1 "前后端联调服务器 172.20.4.88:8088"
          8 "集群节点 10.3.14.241"
          9 "用友云节点 172.20.4.222 用于前端集成联调"
          10 "用友云节点 172.20.4.220 用于后端集成联调"
+         11 "友报表测试服务器 10.3.14.2"
 )
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -88,6 +95,10 @@ case $CHOICE in
             ;;
         10)
             ip=$YY_CLOUD_220
+            user=chenyang
+            ;;
+        11)
+            ip=$YBB_NODE_2
             user=chenyang
             ;;
 esac
