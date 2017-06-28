@@ -37,6 +37,10 @@ YY_CLOUD_222=172.20.4.222
 YY_CLOUD_223=172.20.4.223
 YY_CLOUD_224=172.20.4.224
 
+get_passwd_from_keychain() {
+  /home/chenyang/.local/bin/gkeyring --id=$1 | cut -f3
+}
+
 # Dialog config
 HEIGHT=20
 WIDTH=50
@@ -65,6 +69,7 @@ clear
 case $CHOICE in
         1)
             #echo "You chose Option 1"
+            passwd=`get_passwd_from_keychain 2045`
             ip=$YY_CLOUD_220
             ;;
         2)
@@ -98,4 +103,5 @@ fi
 
 echo "正在连接到数据库..."
 ssh $user@$ip -p $PORT
-mysql -h $ip -u $user -p$password
+
+mysql -h $ip -u $user -p$passwd
