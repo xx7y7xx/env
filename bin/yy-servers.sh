@@ -6,10 +6,30 @@
 PORT=22
 user=root # default login user
 
-# Server IP
+#
+# IP
+#
 
-# 说明
-# 10.3.14.* 都是阿里云的服务器
+# aliyun, 10.3.14.* 都是阿里云的服务器
+
+ALIYUN_1=10.3.14.1
+ALIYUN_2=10.3.14.2
+ALIYUN_3=10.3.14.3
+ALIYUN_5=10.3.14.5
+ALIYUN_237=10.3.14.237
+
+# yonyou cloud
+
+YY_CLOUD_219=172.20.4.219
+YY_CLOUD_220=172.20.4.220
+YY_CLOUD_221=172.20.4.221
+YY_CLOUD_222=172.20.4.222
+YY_CLOUD_223=172.20.4.223
+YY_CLOUD_224=172.20.4.224
+
+#
+# Servers
+#
 
 # 前后端联调
 TESTING_SERVER=172.20.4.88
@@ -17,26 +37,22 @@ TESTING_SERVER=172.20.4.88
 BACKEND_DEVELOPMENT_SERVER=172.20.13.230
 # 集群？
 CLUSTER_NODE_233=10.3.14.233
-CLUSTER_NODE_237=10.3.14.237
 CLUSTER_NODE_238=10.3.14.238
 CLUSTER_NODE_239=10.3.14.239
-CLUSTER_NODE_240=10.3.14.240
+CLUSTER_NODE_240=10.3.14.240 # 上面有mysql，后端使用，已经禁止前端登录
 CLUSTER_NODE_241=10.3.14.241
 
 # 友报表
 
 # 测试环境
-YBB_NODE_2=10.3.14.2
+YBB_NODE_2="$ALIYUN_2"
 # 正式环境
-YBB_NODE_1=10.3.14.1
+YBB_NODE_1="$ALIYUN_1"
 
-# 用友云
-YY_CLOUD_219=172.20.4.219
-YY_CLOUD_220=172.20.4.220
-YY_CLOUD_221=172.20.4.221
-YY_CLOUD_222=172.20.4.222
-YY_CLOUD_223=172.20.4.223
-YY_CLOUD_224=172.20.4.224
+# 友账表生产环境前端服务器
+#YZB_STATICS_SERVER="$ALIYUN_237" # 曾经的友账表前端静态资源服务器
+YZB_STATICS_SERVER1="$ALIYUN_3"
+YZB_STATICS_SERVER2="$ALIYUN_5"
 
 # Dialog config
 HEIGHT=20
@@ -55,8 +71,10 @@ OPTIONS=(1 "前后端联调服务器 172.20.4.88:8088"
          8 "集群节点 10.3.14.241"
          9 "用友云节点 172.20.4.222 用于前端集成联调"
          10 "用友云节点 172.20.4.220 用于后端集成联调"
-         11 "友报表正式服务器 10.3.14.1"
-         12 "友报表测试服务器 10.3.14.2"
+         11 "友报表正式服务器 $YBB_NODE_1"
+         12 "友报表测试服务器 $YBB_NODE_2"
+         13 "友账表前端静态资源服务器(1) $YZB_STATICS_SERVER1"
+         14 "友账表前端静态资源服务器(2) $YZB_STATICS_SERVER2"
 )
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -80,7 +98,7 @@ case $CHOICE in
             ip=$CLUSTER_NODE_233
             ;;
         4)
-            ip=$CLUSTER_NODE_237
+            ip=$ALIYUN_237
             ;;
         5)
             ip=$CLUSTER_NODE_238
@@ -109,6 +127,12 @@ case $CHOICE in
         12)
             ip=$YBB_NODE_2
             user=chenyang
+            ;;
+        13)
+            ip=$YZB_STATICS_SERVER1
+            ;;
+        14)
+            ip=$YZB_STATICS_SERVER2
             ;;
 esac
 
