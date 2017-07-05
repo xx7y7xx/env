@@ -5,6 +5,7 @@
       "jump-to-import"
       "symbol-gen"
       "whitespace"
+      "language-gfm"
     ]
     excludeVcsIgnoredPaths: true
     ignoredNames: [
@@ -36,7 +37,7 @@
   "linter-eslint":
     fixOnSave: true
   "linter-ui-default":
-    panelHeight: 100
+    panelHeight: 108
     showPanel: true
   minimap:
     plugins:
