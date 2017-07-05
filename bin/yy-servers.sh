@@ -26,13 +26,15 @@ YY_CLOUD_221=172.20.4.221
 YY_CLOUD_222=172.20.4.222
 YY_CLOUD_223=172.20.4.223
 YY_CLOUD_224=172.20.4.224
+YY_CLOUD_88=172.20.4.88
 
 #
 # Servers
 #
 
-# 前后端联调
-TESTING_SERVER=172.20.4.88
+# 【废弃】前后端联调
+# 上面曾经的5088 http://172.20.4.88:5088/workbench
+TESTING_SERVER="${YY_CLOUD_88}"
 # 后端开发
 BACKEND_DEVELOPMENT_SERVER=172.20.13.230
 # 集群？
@@ -61,7 +63,7 @@ CHOICE_HEIGHT=10
 BACKTITLE="SSH连接到服务器"
 TITLE="服务器列表"
 MENU="请在下面列表中选择需要连接的服务器:"
-OPTIONS=(1 "前后端联调服务器 172.20.4.88:8088"
+OPTIONS=(1 "前后端联调服务器 172.20.4.222"
          2 "后端开发服务器 172.20.13.230:8090 也是jenkins一个node"
          3 "集群节点 10.3.14.233"
          4 "集群节点 10.3.14.237"
@@ -87,8 +89,8 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            #echo "You chose Option 1"
-            ip=$TESTING_SERVER
+            ip=$YY_CLOUD_222
+            user=chenyang
             ;;
         2)
             #echo "You chose Option 2"
