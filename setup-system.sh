@@ -26,6 +26,7 @@ sudo apt-get install -y htop # system monitor
 # GUI software
 sudo apt-get install -y nautilus-open-terminal
 sudo apt-get install -y filezilla gimp meld
+sudo apt-get install -y gparted # disk tools
 # 辅助~/bin中的脚本，比如yy-servers.sh，生成GUI菜单
 sudo apt-get install -y dialog
 
