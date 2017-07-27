@@ -101,6 +101,9 @@ ln -s ~/env/.config/filezilla ~/.config/filezilla
 # VirtualBox
 ln -s /home/chenyang/env/.VirtualBox /home/chenyang/.VirtualBox
 
+# tmux
+ln -s /home/chenyang/env/.tmux.conf /home/chenyang/.tmux.conf
+
 ##########
 # yonyou #
 ##########
