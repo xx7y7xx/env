@@ -15,6 +15,7 @@ sudo ls
 # 1. MUST INSTALL tools and base system.
 
 # CLI software
+sudo apt-get install -y zsh # z shell
 sudo apt-get install -y vim vim-gtk # editor
 sudo apt-get install -y git subversion # version control
 sudo apt-get install -y curl # network tool
