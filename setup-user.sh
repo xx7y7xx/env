@@ -111,6 +111,9 @@ ln -s /home/chenyang/env/.tmux.conf /home/chenyang/.tmux.conf
 # git config
 ln -s /home/chenyang/env/.gitconfig.yonyou /home/chenyang/.gitconfig
 
+# zsh
+ln -s /home/chenyang/env/.zshrc /home/chenyang/.zshrc
+
 ###########
 # sanpolo #
 ###########
