@@ -95,3 +95,6 @@ set-title () {
   print -Pn "\e]0;$1\a"
 }
 
+# User specific environment and startup programs
+PATH=$PATH:$HOME/bin
+
