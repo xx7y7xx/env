@@ -29,3 +29,15 @@
   ci = commit
   br = branch
   lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+
+# git proxy for ss
+# https://gist.github.com/laispace/666dd7b27e9116faece6
+# ```sh
+# git config --global http.proxy 'socks5://127.0.0.1:1080'
+# git config --global https.proxy 'socks5://127.0.0.1:1080'
+# ```
+
+[http]
+	proxy = socks5://127.0.0.1:1080
+[https]
+	proxy = socks5://127.0.0.1:1080
