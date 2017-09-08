@@ -25,6 +25,7 @@ sudo apt-get install -y openssh-server sshfs # ssh related tools
 sudo apt-get install -y inotify-tools # io tools
 sudo apt-get install -y htop # system monitor
 # GUI software
+sudo apt install terminator
 sudo apt-get install -y nautilus-open-terminal
 sudo apt-get install -y filezilla gimp meld
 sudo apt-get install -y gparted # disk tools
