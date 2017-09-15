@@ -24,6 +24,7 @@ sudo apt-get install -y trash-cli # trash file in command line, replace rm
 sudo apt-get install -y openssh-server sshfs # ssh related tools
 sudo apt-get install -y inotify-tools # io tools
 sudo apt-get install -y htop # system monitor
+sudo apt install -y socat # proxy
 # GUI software
 sudo apt install terminator
 sudo apt-get install -y nautilus-open-terminal
