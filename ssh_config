@@ -1,2 +1,6 @@
 Host *
   GSSAPIAuthentication no
+
+Host github.com
+  #ProxyCommand=socat - PROXY:127.0.0.1:%h:%p,proxyport=1080,proxyauth=user:pwd
+  ProxyCommand=socat - PROXY:127.0.0.1:%h:%p,proxyport=8080
