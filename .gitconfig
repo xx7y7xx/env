@@ -30,14 +30,17 @@
   br = branch
   lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
 
-# git proxy for ss
+# Proxy for git clone with HTTPS
 # https://gist.github.com/laispace/666dd7b27e9116faece6
-# ```sh
-# git config --global http.proxy 'socks5://127.0.0.1:1080'
-# git config --global https.proxy 'socks5://127.0.0.1:1080'
-# ```
-
 [http]
-	proxy = socks5://127.0.0.1:1080
+  # socks proxy
+  proxy = socks5://127.0.0.1:1080
+  # http/https proxy
+  #proxy = http://127.0.0.1:8080
 [https]
-	proxy = socks5://127.0.0.1:1080
+  proxy = socks5://127.0.0.1:1080
+  #proxy = https://127.0.0.1:8080
+
+# Proxy for git clone with SSH
+# https://xxd3vin.github.io/git#proxy
+# use socat, edit `~/.ssh/config`
