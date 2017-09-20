@@ -25,6 +25,7 @@ sudo apt-get install -y openssh-server sshfs # ssh related tools
 sudo apt-get install -y inotify-tools # io tools
 sudo apt-get install -y htop # system monitor
 sudo apt install -y socat # proxy
+sudo apt install -y ffmpeg
 # GUI software
 sudo apt install terminator
 sudo apt-get install -y nautilus-open-terminal
