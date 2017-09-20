@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PATH="$PATH:/home/chenyang/bin"
+
 function check()
 {
   repo_path="`pwd`"
