@@ -50,6 +50,8 @@ CLUSTER_NODE_241=10.3.14.241
 
 # 测试环境
 YBB_NODE_2="$ALIYUN_2"
+# 灰度环境
+YBB_NODE_12="$ALIYUN_12"
 # 正式环境
 YBB_NODE_1="$ALIYUN_1"
 
@@ -77,8 +79,9 @@ OPTIONS=(1 "前后端联调服务器 172.20.4.222"
          10 "用友云节点 172.20.4.220 用于后端集成联调"
          11 "友报表正式服务器 $YBB_NODE_1"
          12 "友报表测试服务器 $YBB_NODE_2"
-         13 "友账表前端静态资源服务器(1) $YZB_STATICS_SERVER1"
-         14 "友账表前端静态资源服务器(2) $YZB_STATICS_SERVER2"
+         13 "友报表测试服务器 $YBB_NODE_12"
+         14 "友账表前端静态资源服务器(1) $YZB_STATICS_SERVER1"
+         15 "友账表前端静态资源服务器(2) $YZB_STATICS_SERVER2"
 )
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -133,9 +136,12 @@ case $CHOICE in
             user=chenyang
             ;;
         13)
-            ip=$YZB_STATICS_SERVER1
+            ip=$YBB_NODE_12
             ;;
         14)
+            ip=$YZB_STATICS_SERVER1
+            ;;
+        15)
             ip=$YZB_STATICS_SERVER2
             ;;
 esac
