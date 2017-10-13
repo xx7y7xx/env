@@ -22,4 +22,5 @@ ln -s ~/env/bin ~/bin
 
 ```
 $ brew install ffmpeg
+$ brew install dialog # Linux shell script dialog http://invisible-island.net/dialog/dialog.html
 ```
