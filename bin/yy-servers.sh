@@ -152,4 +152,4 @@ if [ -z $ip ]; then
 fi
 
 echo "正在连接到服务器..."
-ssh $user@$ip -p $PORT
+ssh $user@$ip -p $PORT -i ~/.ssh/yonyou/id_rsa
