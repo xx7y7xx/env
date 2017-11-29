@@ -118,6 +118,10 @@ turn `core.autocrlf` off, otherwise Git will convert `LF` in `.vimrc` to `CRLF`,
   - `.vim/bundle/*` vim plugins
   - `vendor/*`
 
+## TODO
+
+- vim related should migrate to https://github.com/xxd3vin/vimrc
+
 ## References
 
 - https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
