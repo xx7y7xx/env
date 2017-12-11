@@ -10,7 +10,7 @@ dev
 ```
 sudo apt-get install git
 cd ~
-git clone --recursive --config core.autocrlf=false git@github.com:xxd3vin/env.git
+git clone git@github.com:xxd3vin/env.git
 cd env
 ./setup-system.sh
 ./setup-user.sh
@@ -107,10 +107,6 @@ You may providde a config file `.tern-config` for all projects, and
 ### Git
 
 - `git meld` alias
-
-## note
-
-turn `core.autocrlf` off, otherwise Git will convert `LF` in `.vimrc` to `CRLF`, and cause error when run Vim.
 
 ## Dir structure
 
