@@ -24,3 +24,7 @@ ln -s ~/env/bin ~/bin
 $ brew install ffmpeg
 $ brew install dialog # Linux shell script dialog http://invisible-island.net/dialog/dialog.html
 ```
+
+# MUST install neo-vim
+mkdir ${HOME}/.config/nvim
+ln -s ${HOME}/env/.config/nvim/init.vim ${HOME}/.config/nvim/init.vim
