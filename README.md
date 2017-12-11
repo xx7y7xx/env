@@ -104,6 +104,10 @@ And provide a config file `.tern-config` in root dir of your project.
 You may providde a config file `.tern-config` for all projects, and
 `.tern-project` config file for current project (in project root dir]).
 
+### neo vim
+
+`.config/nvim/init.vim`
+
 ### Git
 
 - `git meld` alias
