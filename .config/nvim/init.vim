@@ -42,7 +42,7 @@ Plug 'fatih/vim-go', { 'tag': '*' }
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 "
 " for frontend (react) development
@@ -89,6 +89,14 @@ Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 
 " Automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'Raimondi/delimitMate'
+
+"
+" Searching support
+"
+
+" fzf search tool (If installed using Homebrew)
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 "
 " Other plugins
@@ -263,3 +271,7 @@ set number
 set expandtab           " Insert spaces when TAB is pressed.
 set tabstop=2           " Render TABs using this many spaces.
 set shiftwidth=2        " Indentation amount for < and > commands.
+
+" searching
+" use case insensitive by default,  use \C to do case sensitive search
+set ignorecase
