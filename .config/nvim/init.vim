@@ -98,6 +98,10 @@ Plug 'Raimondi/delimitMate'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
+" Ack.vim (Ack)
+Plug 'mileszs/ack.vim'
+" TODO should I change to ag? https://github.com/ggreer/the_silver_searcher
+
 "
 " Other plugins
 "
