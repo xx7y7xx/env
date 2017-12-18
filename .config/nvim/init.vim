@@ -1,4 +1,4 @@
-" https://github.com/xxd3vin/vimrc/blob/master/init.vim
+" https://github.com/xxd3vin/env/blob/master/.config/nvim/init.vim
 " ```
 " ln -s ~/env/.zshrc ~/.zshrc
 " ```
