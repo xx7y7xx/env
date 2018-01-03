@@ -210,6 +210,7 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 autocmd BufWritePost *.js AsyncRun -post=checktime prettier --config package.json --write %
 autocmd BufWritePost *.jsx AsyncRun -post=checktime prettier --config package.json --write %
+autocmd BufWritePost *.json AsyncRun -post=checktime prettier --config package.json --write %
 
 "===============================================================================
 " Plugin: deoplete.nvim
