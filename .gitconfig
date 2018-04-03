@@ -1,6 +1,17 @@
 # Sample of git config file
 #https://gist.github.com/pksunkara/988716
 
+# Setup manually
+# $ git config --global core.editor vim
+# $ git config --global user.name "Devin Chen"
+# $ git config --global user.email d3vin.chen@gmail.com
+# $ git config --global alias.co checkout
+# $ git config --global alias.ci commit
+# $ git config --global alias.br branch
+# $ git config --global alias.lgb "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches"
+# $ git config --global http.proxy socks5://127.0.0.1:1080
+# $ git config --global https.proxy socks5://127.0.0.1:1080
+
 [core]
   quotepath = false
   # The defualt value of `autocrlf` is false, means not auto convert eol.
