@@ -129,6 +129,16 @@ let g:javascript_plugin_jsdoc = 1
 "autocmd VimEnter * NERDTree
 autocmd BufWinEnter * NERDTreeMirror
 
+" Restore session on starting Vim
+"autocmd VimEnter * call MySessionRestoreFunction()
+"autocmd VimEnter * source ~/.vim/sessions/last.vim
+"autocmd VimEnter * NERDTree
+
+" Save session on quitting Vim
+" TODO should move to common section
+autocmd VimLeave * NERDTreeClose
+"autocmd VimLeave * mksession! ~/.vim/sessions/last.vim
+
 " Toggle NERDTree with Ctrl+n
 map <C-n> :NERDTreeToggle<CR>
 
@@ -280,3 +290,7 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 " searching
 " use case insensitive by default,  use \C to do case sensitive search
 set ignorecase
+
+" key mapping
+map <F2> :mksession! ~/.vim/sessions/last.vim <cr> " Quick write session with F2
+map <F3> :source ~/.vim/sessions/last.vim <cr>     " And load session with F3
